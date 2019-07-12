@@ -11,7 +11,7 @@
 
 ### Statistic
 [maximum likelihood](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
-
+___
 [hypothesis testing](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/hypothesis-testing/):
     
 Z-test
@@ -21,6 +21,15 @@ t-test
 Chi-sqaure test
 
 Fisher's Exact test 
+
+Type I error
+
+Type II error
+
+p value
+
+Recall, Percision, F1 score
+___
     
 ### Algorithm
 
