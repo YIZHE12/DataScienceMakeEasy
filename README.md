@@ -1,4 +1,4 @@
-# Machine Learning Make Easy
+# Data Science Make Easy
 ## The purpose of this github repo is to put some basic topics in data science together
 
 ### Data Hanlding
