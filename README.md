@@ -11,13 +11,13 @@
 [maximum likelihood](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
 [hypothesis testing](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/hypothesis-testing/):
     
-    Z-test
- 
-    t-test
-    
-    Chi-sqaure test
-    
-    Fisher's Exact test 
+Z-test
+
+t-test
+
+Chi-sqaure test
+
+Fisher's Exact test 
     
 ### Algorithm
 
