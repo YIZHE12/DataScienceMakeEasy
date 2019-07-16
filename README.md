@@ -55,7 +55,7 @@ A loose definition Tim Roughgarden: from iteratively make "my opic" decision - d
 
 Many greeydy algorithm is actually not correct!
 
-Exp: [Dijkstra's shortest path algorithm](https://www.youtube.com/watch?v=_lHSawdgXpI) It is not correct if the edge is negative. 
+Exp: [Dijkstra's shortest path algorithm](https://www.youtube.com/watch?v=_lHSawdgXpI) It is not correct if the edge is negative. O(E + VlogV)
 ```
  1  function Dijkstra(Graph, source):
  2
