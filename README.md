@@ -48,9 +48,9 @@ ___
 
 ### Divide and Conquer
 
-#### Randomized Algorithm
+### Randomized Algorithm
 
-#### Greedy Algorithm: 
+### Greedy Algorithm: 
 A loose definition Tim Roughgarden: from iteratively make "my opic" decision - decision that seems to be good at the time, and hope everyting workds out at the end. A more formal definition: A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage[1] with the intent of finding a global optimum. 
 
 Many greeydy algorithm is actually not correct!
@@ -89,19 +89,19 @@ If we are only interested in a shortest path between vertices source and target,
     5          insert u at the beginning of S        // Push the vertex onto the stack
     6          u ← prev[u]                           // Traverse from target to source
 
-#### Dynamic programming
+### Dynamic programming
 
 
-### Machine Learning 
+## Machine Learning 
 
 https://developers.google.com/machine-learning/glossary/
 
 https://developers.google.com/machine-learning/guides/rules-of-ml/
 
-### Deep Learning
+## Deep Learning
 
-### System design
+## System design
 
-### SQL
+## SQL
 https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exercise-sql_movie_query_core/
 
