@@ -94,6 +94,10 @@ If we are only interested in a shortest path between vertices source and target,
 
 ### Machine Learning 
 
+https://developers.google.com/machine-learning/glossary/
+
+https://developers.google.com/machine-learning/guides/rules-of-ml/
+
 ### Deep Learning
 
 ### System design
