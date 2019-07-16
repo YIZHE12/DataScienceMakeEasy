@@ -50,9 +50,12 @@ ___
 
 #### Randomized Algorithm
 
-#### Greedy Algorithm:
+#### Greedy Algorithm: 
+A loose definition Tim Roughgarden: from iteratively make "my opic" decision - decision that seems to be good at the time, and hope everyting workds out at the end. A more formal definition: A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage[1] with the intent of finding a global optimum. 
 
-Dijkstra's shortest path algorithm
+Many greeydy algorithm is actually not correct!
+
+Exp: (Dijkstra's shortest path algorithm)[https://www.youtube.com/watch?v=_lHSawdgXpI] It is not correct if the edge is negative. 
 
 #### Dynamic programming
 
