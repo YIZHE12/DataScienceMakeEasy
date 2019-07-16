@@ -45,6 +45,7 @@ Recall, Percision, F1 score
 
 ___   
 ## Algorithm
+Resource: https://practice.geeksforgeeks.org/
 
 ### Divide and Conquer
 
