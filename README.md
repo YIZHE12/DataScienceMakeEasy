@@ -1,7 +1,7 @@
 # Data Science Make Easy
-## The purpose of this github repo is to put some basic topics in data science together
+### The purpose of this github repo is to put some basic topics in data science together
 
-### Data Hanlding
+## Data Hanlding
 [Missind data](https://www.kaggle.com/dansbecker/handling-missing-values)
 
 [Resampling](https://medium.com/analytics-vidhya/resampling-methods-statistical-learning-8c3da6fe6d24)
@@ -9,7 +9,7 @@
 [Imbalanced data](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
 ___
-### Statistic
+## Statistic
 
 [Permuations & Combinations](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
 
@@ -44,7 +44,18 @@ Recall, Percision, F1 score
 [Markov chain](https://en.wikipedia.org/wiki/Markov_chain)
 
 ___   
-### Algorithm
+## Algorithm
+
+### Divide and Conquer
+
+#### Randomized Algorithm
+
+#### Greedy Algorithm:
+
+Dijkstra's shortest path algorithm
+
+#### Dynamic programming
+
 
 ### Machine Learning 
 
