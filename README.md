@@ -44,7 +44,7 @@ Recall, Percision, F1 score
 [Markov chain](https://en.wikipedia.org/wiki/Markov_chain)
 
 ___   
-## Algorithm
+## Algorithm and Data Struture
 Resource: 
 
 Programming practice: https://practice.geeksforgeeks.org/; Hacker earth; Hacker rank; Leetcode
@@ -52,6 +52,11 @@ Programming practice: https://practice.geeksforgeeks.org/; Hacker earth; Hacker 
 MIT open course: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
 
 Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%20Using%20Python.pdf
+
+### Data Structure:
+Heap: An array represented by an almost compeleted binary tree
+a node of a tree (i) has parents(i/2) and left node (2*i) and right node (2*i + 1), i starting from 1 in root
+Max Heap: The key of a node >= the key of its children
 
 ### Divide and Conquer
 
