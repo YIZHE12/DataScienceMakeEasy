@@ -54,13 +54,79 @@ MIT open course: https://ocw.mit.edu/courses/electrical-engineering-and-computer
 Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%20Using%20Python.pdf
 
 ### Data Structure:
-Heap: An array represented by an almost compeleted binary tree
+Heap: An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. When a value is extracted and removed from the heap, it can only come from the root node. A node of a tree (i) has parents(i/2) and left node (2 * i) and right node (2 * i + 1), i starting from 1 in root.
+
+Max Heap: The key of a node >= the key of its children
 
 <img src = 'image/heap.png'>
 
-a node of a tree (i) has parents(i/2) and left node (2 * i) and right node (2 * i + 1), i starting from 1 in root
-Max Heap: The key of a node >= the key of its children
 
+Inserting or removing a node in the max heap is O(logN) - worst case senario need to work all the way up to the root (logN levels)
+Creating a max heal is O(N) by doing bottom up - building the heat from the bottom and work the way up, when you reach the top, the worst case is that node need to move all the way down, but as there is less node has large height, we can prove that it has a linear upper bound: https://www.youtube.com/watch?v=MiyLo8adrWw
+
+Doing a heap sort is O(NlogN)
+```
+1 # An array-based implementation of the max-heap.
+2 class MaxHeap :
+3 # Create a max-heap with maximum capacity of maxSize.
+4 def __init__( self, maxSize ):
+5 self._elements = Array( maxSize )
+6 self._count = 0
+7
+8 # Return the number of items in the heap.
+9 def __len__( self ):
+10 return self._count
+11
+12 # Return the maximum capacity of the heap.
+13 def capacity( self ):
+14 return len( self._elements )
+15
+16 # Add a new value to the heap.
+17 def add( self, value ):
+18 assert self._count < self.capacity(), "Cannot add to a full heap."
+19 # Add the new value to the end of the list.
+20 self._elements[ self._count ] = value
+21 self._count += 1
+22 # Sift the new value up the tree.
+23 self._siftUp( self._count - 1 )
+24
+25 # Extract the maximum value from the heap.
+26 def extract( self ):
+27 assert self._count > 0, "Cannot extract from an empty heap."
+13.4 Heaps 397
+28 # Save the root value and copy the last heap value to the root.
+29 value = self._elements[0]
+30 self._count -= 1
+31 self._elements[0] = self._elements[ self._count ]
+32 # Sift the root value down the tree.
+33 self._siftDown( 0 )
+34
+35 # Sift the value at the ndx element up the tree.
+36 def _siftUp( self, ndx ):
+37 if ndx > 0 :
+38 parent = ndx // 2
+39 if self._elements[ndx] > self._elements[parent] : # swap elements
+40 tmp = self._elements[ndx]
+41 self._elements[ndx] = self._elements[parent]
+42 self._elements[parent] = tmp
+43 self._siftUp( parent )
+44
+45 # Sift the value at the ndx element down the tree.
+46 def _siftDown( self, ndx ):
+47 left = 2 * ndx + 1
+48 right = 2 * ndx + 2
+49 # Determine which node contains the larger value.
+50 largest = ndx
+51 if left < count and self._elements[left] >= self._elements[largest] :
+52 largest = left
+53 elif right < count and self._elements[right] >= self._elements[largest]:
+54 largest = right
+55 # If the largest value is not in the current node (ndx), swap it with
+56 # the largest value and repeat the process.
+57 if largest != ndx :
+58 swap( self._elements[ndx], self._elements[largest] )
+59 _siftDown( largest )
+```
 ### Divide and Conquer
 
 ### Randomized Algorithm
