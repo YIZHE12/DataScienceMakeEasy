@@ -112,3 +112,5 @@ https://developers.google.com/machine-learning/guides/rules-of-ml/
 ## SQL
 https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exercise-sql_movie_query_core/
 
+Execise:
+https://www.hackerrank.com/challenges/harry-potter-and-wands/problem
