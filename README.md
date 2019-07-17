@@ -47,11 +47,11 @@ ___
 ## Algorithm
 Resource: 
 
-Programming practice https://practice.geeksforgeeks.org/; Hacker earth; Hacker rank; Leetcode
+Programming practice: https://practice.geeksforgeeks.org/; Hacker earth; Hacker rank; Leetcode
 
-MIT open course
+MIT open course: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
 
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
+Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%20Using%20Python.pdf
 
 ### Divide and Conquer
 
