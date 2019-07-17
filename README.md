@@ -155,6 +155,11 @@ Rules for normalized tables:
 4. Tables shouldn't imply relationships that don't exist.
 
 
+## Case study
+
+Resource:
+
+https://www.analyticsvidhya.com/blog/tag/case-study/
 
 
 
