@@ -120,6 +120,15 @@ https://developers.google.com/machine-learning/glossary/
 
 https://developers.google.com/machine-learning/guides/rules-of-ml/
 
+#### What is Machine Learning?
+
+Arthur Samuel: "the field of study that gives computers the ability to learn without being explicitly programmed." 
+
+Tom Mitchell: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
+
+
+
+
 ## Deep Learning
 
 ## System design
