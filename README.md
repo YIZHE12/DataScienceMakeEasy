@@ -45,7 +45,12 @@ Recall, Percision, F1 score
 
 ___   
 ## Algorithm
-Resource: https://practice.geeksforgeeks.org/
+Resource: 
+Programming practice
+https://practice.geeksforgeeks.org/
+
+MIT open course
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
 
 ### Divide and Conquer
 
