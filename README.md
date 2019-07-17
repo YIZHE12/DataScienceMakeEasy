@@ -117,6 +117,9 @@ https://www.hackerrank.com/challenges/harry-potter-and-wands/problem
 https://www.techbeamers.com/sql-query-questions-answers-for-practice/
 https://www.w3schools.com/sql/sql_update.asp
 
+Window function:
+https://classroom.udacity.com/courses/ud198/lessons/fec9c33e-daea-4a5d-827e-41a09c6fe371/concepts/4c71795c-8ebf-4a3f-b951-494220b702cc
+
 Rules for normalized tables:
 
 1. Every row has the same number of columns.
