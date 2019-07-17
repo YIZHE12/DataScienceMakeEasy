@@ -114,7 +114,7 @@ https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exe
 
 Execise:
 https://www.hackerrank.com/challenges/harry-potter-and-wands/problem
-
+https://www.techbeamers.com/sql-query-questions-answers-for-practice/
 Rules for normalized tables:
 
 1. Every row has the same number of columns.
