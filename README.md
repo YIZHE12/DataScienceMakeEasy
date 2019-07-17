@@ -47,9 +47,7 @@ ___
 ## Algorithm
 Resource: 
 
-Programming practice
-
-https://practice.geeksforgeeks.org/
+Programming practice https://practice.geeksforgeeks.org/; Hacker earth; Hacker rank; Leetcode
 
 MIT open course
 
