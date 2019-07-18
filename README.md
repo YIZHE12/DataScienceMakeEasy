@@ -161,5 +161,8 @@ Resource:
 
 https://www.analyticsvidhya.com/blog/tag/case-study/
 
+## Python
 
+#### Panda tricks
+https://www.youtube.com/watch?v=RlIiVeig3hc
 
