@@ -35,6 +35,8 @@ p value
 
 Recall, Percision, F1 score
 
+[A/B testing](https://conversionxl.com/blog/testing-statistics-mistakes/)
+
 [Designing an Experiment, Power Analysis](http://www.statsoft.com/Textbook/Power-Analysis)
 
 [Nonparametric statistics](https://en.wikipedia.org/wiki/Nonparametric_statistics)
