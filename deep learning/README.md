@@ -12,10 +12,10 @@ np.random.randn(size_l, size_l-1)
 where size_l is the number of neurons in l layer
 
 (2) Relu - he initalization
-<img src = he.png>
+<img src = images/he.png>
 
 (3) Tanh - Xavier initalization
-<img src = Xavier.png>
+<img src = images/Xavier.png>
 
 
 
