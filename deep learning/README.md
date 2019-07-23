@@ -29,14 +29,51 @@ Later, people found out that by multiply the random initialization with a factor
 
 ## Convolutional Neural Network
 
-In a signal processing prosperity, CNN doesn't use convolution but correlation. In signal processing, correlation doesn't need to flip the kernel but convolution does. For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). When padding is applied, then the new image size is (N-f+2p-1) ^2. A typical filter is the sobel filter, which is 
+In a signal processing prosperity, CNN doesn't use convolution but correlation. In signal processing, correlation doesn't need to flip the kernel but convolution does. 
 
-1 0 -1
+For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). If you choose 'valid', meaning no padding, 'same', means padded to same shape, which means p = f+1 /2. When padding is applied, then the new image size is (N-f+2p-1) ^2. Stride means jump and skip, which will have new image size (((N-f+2p)/d + 1) ^2, where in case it is not an int, you need to round it down. 
 
-3 0 -3
+The number of filter (Fn) will be the number of your channels for the next CNN layer. Don't forget for each filter, there is one bias term (b). Therefore, for a 3x3x3 fitler, if you have 10 of them, the total number of training parameters are 3x3x3 + 10 = 280
 
-1 0 -1
+```
+Filter size: f[l]
+Padding: p[l]
+Stride: s[l]
+Filter: f[l]
 
+Each filter has Nc[l-1] channels
+Number of filter is Nc[l]
+
+Input layer shape:
+Nh[l-1] x Nw[l-1] x Nc[l-1]
+Output layer shape:
+Nh[l] x Nw[l] x Nc[l]
+
+We know that
+Nh[l] = round down((Nh[l-1] - f[l] + 2 p[l] )/ s[l] +1)
+Nw[l] = round down((Nw[l-1] - f[l] + 2 p[l] )/ s[l] +1)
+Nc[l] = # filter
+
+The number of weights: f[l] x f[l] x Nc[l-1] x Nc[l]
+The number of bias: Nc[l]
+Total number of training parameters: (f[l] x f[l] x Nc[l-1] +1) x Nc[l]
+
+Activation matrix:
+m x Nh[l] x Nw[l] x Nc[l]
+m is the number of examples in this batch
+```
+
+
+
+
+A typical filter is the sobel filter, which is 
+```
+1   0  -1
+3   0  -3
+1   0  -1
+```
+
+In CNN, the kernel's channel must matched the image channel. For example, for an RGB image, which has 3 channels, the filter must have 3 channel too, but you can have as many filter as your resource permitted. 
 
 
 # Neural network type
