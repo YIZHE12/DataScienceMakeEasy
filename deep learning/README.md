@@ -29,6 +29,8 @@ Later, people found out that by multiply the random initialization with a factor
 
 ## Convolutional Neural Network
 
+It is a great way to reduce number of training examples by sharing weights and sparisity of connection - a value is the later layer is only responded to its receptive field (a fixed number of inputs and not all input).
+
 In a signal processing prosperity, CNN doesn't use convolution but correlation. In signal processing, correlation doesn't need to flip the kernel but convolution does. 
 
 A typical filter is the sobel filter, which is 
@@ -38,10 +40,11 @@ A typical filter is the sobel filter, which is
 1   0  -1
 ```
 
-For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). If you choose 'valid', meaning no padding, 'same', means padded to same shape, which means p = f+1 /2. When padding is applied, then the new image size is (N-f+2p-1) ^2. Stride means jump and skip, which will have new image size (((N-f+2p)/d + 1) ^2, where in case it is not an int, you need to round it down. 
+For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). If you choose 'valid', meaning no padding, 'same', means padded to same shape, which means p = f+1 /2. When padding is applied, then the new image size is (N-f+2p-1) ^2. Stride means jump and skip, which will have new image size (((N-f+2p)/d + 1) ^2, where in case it is not an int, you need to round it down. The benefit of stride is that it allows equal contribution to the later layer among each pixel. For example, if you don't use padding, the upper most left pixel will only be used one in the convolutional operation, while the middle of will be used multiple times.
 
 The number of filter (Fn) will be the number of your channels for the next CNN layer. Don't forget for each filter, there is one bias term (b). Therefore, for a 3x3x3 fitler, if you have 10 of them, the total number of training parameters are 3x3x3 + 10 = 280
 
+In CNN, the kernel's channel must matched the image channel. For example, for an RGB image, which has 3 channels, the filter must have 3 channel too, but you can have as many filter as your resource permitted. 
 ```
 Filter size: f[l]
 Padding: p[l]
@@ -65,18 +68,46 @@ The number of weights: f[l] x f[l] x Nc[l-1] x Nc[l]
 The number of bias: Nc[l]
 Total number of training parameters: (f[l] x f[l] x Nc[l-1] +1) x Nc[l]
 
-Activation matrix:
+Activation matrix for channel last format:
 m x Nh[l] x Nw[l] x Nc[l]
+Activation matrix for channel first format:
+m x Nc[l] x Nh[l] x Nw[l]
+In keras, by default, it is channel last
+
 m is the number of examples in this batch
 ```
+A CNN layer is often followed by a pooling layer to reduce the the size of the image.
 
+One special case of CNN filter is the 1x1 filter. It serves as a cross channel pooling layer. It also greatly reduced the number of parameters, allowing the network to go deeper. Together with residual connection, they are the key moving from VGG to ResNet with higher perfromance and less numebr of parameters. 
 
+### CNN history
+### 1. Classification
+#### 1. LeNet-5 (1998)
+<img src = images/LeNet5.png height = 200>
+First generation of DCNN.
 
+#### AlexNet (2012)
+<img src = images/AlexNet.png height = 200>
+It add dropout, ReLU activations, SGD with momentum.
 
+#### GoogleNet/Inception(2014)
+<img src = images/Incep.png height = 200>
+It used batch normalization, RMSprop and most importantly Mlpconv (1x1 filter added in the middle), which serves as a non-linear filter.
 
+Over the years, it has been developed for multiple version:
+http://www.programmersought.com/article/7609143938/
 
-In CNN, the kernel's channel must matched the image channel. For example, for an RGB image, which has 3 channels, the filter must have 3 channel too, but you can have as many filter as your resource permitted. 
+#### VGG(2014)
+<img src = images/VGG.png height = 200>
+Very uniform architecture but large number of parameters
 
+#### ResNet(2015)
+<img src = images/ResNet.png height = 200>
+1X1 with skip connections to make the network go deeper
+
+#### 2. Object Detection
+
+#### 3. GAN
 
 # Neural network type
 ## [Restricted boltzmann machinese](http://deeplearning.net/tutorial/rbm.html)
