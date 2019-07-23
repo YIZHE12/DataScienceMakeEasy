@@ -9,7 +9,7 @@
 [Imbalanced data](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
 ___
-## Statistic
+## [Statistic](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/Statistics)
 
 ___   
 ## Algorithm and Data Struture
