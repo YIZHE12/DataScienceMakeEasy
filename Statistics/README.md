@@ -21,8 +21,8 @@ It is similar to Chi-square test. It has small number of examples and it is also
 There is a women who claimed that she can tell the difference if the milk is put before the tea or after. Fisher asked her to drink 8 cup of teas, and told her that 4 of them have milk first and 4 of them have tea first. The null hypothesis is that, there is no difference between whether it is tea or milk being added first. He chose p<0.05 then he is confident to reject the null hypothesis. If the women's guess is random, in total, there are 8 chose 4, which is 8*7*6*5/4*3*2 = 70 difference combination, among which, there is only 1 that is the correct combination. Therefore, if the women guessed all correct, the p values is 1/70, which is around 0.014 < 0.5. Therefore, he will rejected the hypothesis. However, if the women only guessed three that is correct, then there are 4 choose 1 that is A but she guessed B and 4 choose 1 that is B but she guessed A, therefore, there are 4X4 = 16 combinations. Then the p values is 16/70, which is around 0.23 > 0.05, therefore, he will reject the null. 
 
 Another example is that:
-<img src = images/fisher1.png height = 40>
-<img src = images/fisher2.png height = 40>
+<img src = images/fisher.png height = 100>
+<img src = images/fisher2.png height = 100>
 
 
 ## Type I error
