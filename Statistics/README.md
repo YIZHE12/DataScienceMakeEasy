@@ -8,9 +8,10 @@
 
 ## [hypothesis testing](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/hypothesis-testing/):
     
-## Z-test
+## Z-test and t-test
 
-## t-test
+If the sample size is large or the population variance is known, use Z -test. If the sample size is small, use t-test. Often, when n<100, use t-test.
+
 
 ## [Chi-sqaure test](https://en.wikipedia.org/wiki/Chi-squared_test)
 
