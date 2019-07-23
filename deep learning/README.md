@@ -1,4 +1,4 @@
-# Neural network basic
+# Neural network set up
 ## Weight Initialization
 https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94
 
@@ -102,6 +102,7 @@ It used batch normalization, RMSprop and most importantly Mlpconv (1x1 filter ad
 Over the years, it has been developed for multiple version:
 http://www.programmersought.com/article/7609143938/
 
+<img src = images/Godeeper.png>
 #### VGG(2014)
 <img src = images/VGG.png height = 200>
 Very uniform architecture but large number of parameters
@@ -113,6 +114,11 @@ Very uniform architecture but large number of parameters
 #### 2. Object Detection
 
 #### 3. GAN
+
+### Other things about CNN
+
+Note that CNN layer is often followed by Max Pool, Dropout and Batchnorm. Note that nowaday, often we use spatial dropout to remove the entrie feature map instead of a few neurons. 
+
 
 # Neural network type
 ## [Restricted boltzmann machinese](http://deeplearning.net/tutorial/rbm.html)
