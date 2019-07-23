@@ -31,6 +31,13 @@ Later, people found out that by multiply the random initialization with a factor
 
 In a signal processing prosperity, CNN doesn't use convolution but correlation. In signal processing, correlation doesn't need to flip the kernel but convolution does. 
 
+A typical filter is the sobel filter, which is 
+```
+1   0  -1
+3   0  -3
+1   0  -1
+```
+
 For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). If you choose 'valid', meaning no padding, 'same', means padded to same shape, which means p = f+1 /2. When padding is applied, then the new image size is (N-f+2p-1) ^2. Stride means jump and skip, which will have new image size (((N-f+2p)/d + 1) ^2, where in case it is not an int, you need to round it down. 
 
 The number of filter (Fn) will be the number of your channels for the next CNN layer. Don't forget for each filter, there is one bias term (b). Therefore, for a 3x3x3 fitler, if you have 10 of them, the total number of training parameters are 3x3x3 + 10 = 280
@@ -66,12 +73,7 @@ m is the number of examples in this batch
 
 
 
-A typical filter is the sobel filter, which is 
-```
-1   0  -1
-3   0  -3
-1   0  -1
-```
+
 
 In CNN, the kernel's channel must matched the image channel. For example, for an RGB image, which has 3 channels, the filter must have 3 channel too, but you can have as many filter as your resource permitted. 
 
