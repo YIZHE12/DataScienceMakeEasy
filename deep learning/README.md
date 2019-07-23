@@ -135,7 +135,7 @@ Non-max suppresion: only keep the box with the highest pc if multiple box are se
 For different grid flagging the same object, only keep the one with the highest IOU.
 
 Procedure of YOLO:
-1. Assume there are 19x19 grid, then each grid has the output as \[pc bx by bh bw] if there is one class
+1. Assume there are 19x19 grid, then each grid has the output as \[pc bx by bh bw] if there is one class. For more than one class, each class has its own \[pc bx by bh bw].
 
 2. Discard all boxes with pc<=0.6
 
