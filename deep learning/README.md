@@ -12,6 +12,8 @@ np.random.randn(size_l, size_l-1)
 
 where size_l is the number of neurons in l layer
 
+Later, people found out that by multiply the random initialization with a factor it can force the standard deviation of the weights close to 1. Therefore, we have the he and Xavier initalizaiton:
+
 (2) Relu - he initalization
 <img src = images/he.png>
 
