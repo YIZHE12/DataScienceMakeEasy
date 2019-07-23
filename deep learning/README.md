@@ -4,7 +4,9 @@ https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization
 
 To avoid vanishing & exploding gradient, we need to initialize the nn's weight carefully. 
 
-An old fashion way to initialize the weight is to draw a even distribution weight with bound of <img src = images/bound.png height = 100>. 
+An old fashion way to initialize the weight is to draw a even distribution weight with bound of 
+
+<img src = images/bound.png height = 100>. 
 ```
 np.random.uniform(-sqrt(6)/(size_l + size_l-1), sqrt(6)/(size_l + size_l-1), (size_l, size_l-1))
 ```
@@ -78,7 +80,11 @@ m is the number of examples in this batch
 ```
 A CNN layer is often followed by a pooling layer to reduce the the size of the image.
 
-One special case of CNN filter is the 1x1 filter. It serves as a cross channel pooling layer. It also greatly reduced the number of parameters, allowing the network to go deeper. Together with residual connection, they are the key moving from VGG to ResNet with higher perfromance and less numebr of parameters. 
+One special case of CNN filter is the 1x1 filter. It serves as a cross channel pooling layer. It also greatly reduced the number of parameters, allowing the network to go deeper. Together with residual connection, they are the key moving from VGG to ResNet with higher perfromance and less numebr of parameters. A 1x1 filter is basically introducing a fully connected layer into the CNN.
+
+We can also do it reversly, to replace FCN, we can use a filter that has the same size as the image to convert the image to a 1D vector. 
+
+<img src = images/11.png>
 
 ### CNN history
 ### 1. Classification
@@ -111,7 +117,16 @@ Very uniform architecture but large number of parameters
 <img src = images/ResNet.png height = 200>
 1X1 with skip connections to make the network go deeper
 
-#### 2. Object Detection
+### 2. Object Detection
+
+In image classification and object detection, usually you have one object. You can do image classification on multiple object in one images, but they require you to do one hot coding all your classes and your sigmoid instead of softmax in the last layer. See my github repo in predicting fashino attributes based on image data: https://github.com/YIZHE12/fashiontags
+
+In object detection class, you have more than one object. For each object, you have two output - label (class) and bounding box coordinate (x, y, w, h)
+
+#### Sliding window
+
+
+
 
 #### 3. GAN
 
