@@ -20,7 +20,7 @@ where size_l is the number of neurons in l layer
 
 ## Convolutional Neural Network
 
-In a signal processing prosperity, CNN doesn't use convolution but correlation. In signal processing, correlation doesn't need to flip the kernel but convolution does. For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). A typical filter is the sobel filter, which is 
+In a signal processing prosperity, CNN doesn't use convolution but correlation. In signal processing, correlation doesn't need to flip the kernel but convolution does. For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). When padding is applied, then the new image size is (N-f+2p-1) ^2. A typical filter is the sobel filter, which is 
 
 1 0 -1
 
