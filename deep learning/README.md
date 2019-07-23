@@ -18,6 +18,18 @@ where size_l is the number of neurons in l layer
 (3) Tanh - Xavier initalization
 <img src = images/Xavier.png>
 
+## Convolutional Neural Network
+
+In a signal processing prosperity, CNN doesn't use convolution but correlation. In signal processing, correlation doesn't need to flip the kernel but convolution does. For a N x N image, with a f x f filter, after convolution, the new image size is (N-f+1) x (N-f+1). A typical filter is the sobel filter, which is 
+
+1 0 -1
+
+3 0 -3
+
+1 0 -1
+
+
+
 # Neural network type
 ## [Restricted boltzmann machinese](http://deeplearning.net/tutorial/rbm.html)
 A good example: https://github.com/hismael17/RBM
