@@ -12,7 +12,7 @@
 
 ## t-test
 
-## Chi-sqaure test
+## [Chi-sqaure test](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/chi-square/)
 
 A chi-square test for independence compares two variables in a contingency table to see if they are related. They degree of freedom is the sum of number of row and columns - 2. 
 
