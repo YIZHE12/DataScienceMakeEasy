@@ -6,6 +6,8 @@ To avoid vanishing & exploding gradient, we need to initialize the nn's weight c
 
 An old fashion way to initialize the weight is to draw a even distribution weight with bound of <img src = images/bound.png height = 100>. 
 
+np.random.uniform(-sqrt(6)/(size_l + size_l-1), sqrt(6)/(size_l + size_l-1), size_l * size_l-1).reshape(size_l, size_l-1)
+
 However, this will create a vanishing or exploding gradients. Therefore, nowaday, it is rarely use. 
 
 For the b terms, usually, we set it to zero. For the W term, we can use several strategies based on the activation functions:
