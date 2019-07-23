@@ -9,6 +9,7 @@
 ## [hypothesis testing](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/hypothesis-testing/):
     
 ## Z-test and t-test
+<img src = images/PDF_norm.png height = 100>
 
 Before using either Z-test or t-test, always check if the distribution is normal! If the sample size is large or the population variance is known, use Z -test, otherwise use t-test. Often, when n>30, you can use z-test, and use the sample standard deviation/sqrt(sample size) as the estimation of the population standard deviation. Comparing the shape of t-test and z-test: t-test has a larger tail - more uncertainty. Meaning, for the same p-value, the critical value of t-test need to be closer to the center than the z-test.
 
