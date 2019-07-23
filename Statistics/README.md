@@ -21,8 +21,11 @@ There is a women who claimed that she can tell the difference if the milk is put
 
 Another example is that:
 We have half female and male students. The null hypothesis is that they are equally likely to be studying at this time. We have observation number as followed:
+
 <img src = images/fisher.png height = 100>
+
 The p value will be:
+
 <img src = images/fisher2.png height = 100>
 
 
