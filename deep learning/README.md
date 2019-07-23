@@ -82,6 +82,11 @@ One special case of CNN filter is the 1x1 filter. It serves as a cross channel p
 
 ### CNN history
 ### 1. Classification
+
+Resource:
+http://cs231n.stanford.edu/slides/2019/cs231n_2019_lecture09.pdf
+<img src = images/complex/LeNet5.png>
+
 #### 1. LeNet-5 (1998)
 <img src = images/LeNet5.png height = 200>
 First generation of DCNN.
@@ -92,7 +97,7 @@ It add dropout, ReLU activations, SGD with momentum.
 
 #### GoogleNet/Inception(2014)
 <img src = images/Incep.png height = 200>
-It used batch normalization, RMSprop and most importantly Mlpconv (1x1 filter added in the middle), which serves as a non-linear filter.
+It used batch normalization, RMSprop and most importantly Mlpconv (1x1 filter added in the middle), which serves as a non-linear filter. No FC layers.
 
 Over the years, it has been developed for multiple version:
 http://www.programmersought.com/article/7609143938/
