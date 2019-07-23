@@ -17,7 +17,30 @@
 A chi-square test for independence compares two variables in a contingency table to see if they are related. They degree of freedom is the sum of number of row and columns - 2. 
 
 <img src = images/chi-sqaure.png height = 100>
+Example chi-squared test for categorical data
+Suppose there is a city of 1,000,000 residents with four neighborhoods: A, B, C, and D. A random sample of 650 residents of the city is taken and their occupation is recorded as "white collar", "blue collar", or "no collar". The null hypothesis is that each person's neighborhood of residence is independent of the person's occupational classification. The data are tabulated as:
 
+A	B	C	D	total
+White collar	90	60	104	95	349
+Blue collar	30	50	51	20	151
+No collar	30	40	45	35	150
+Total	150	150	200	150	650
+Let us take the sample living in neighborhood A, 150, to estimate what proportion of the whole 1,000,000 live in neighborhood A. Similarly we take 
+349
+/
+650
+ to estimate what proportion of the 1,000,000 are white-collar workers. By the assumption of independence under the hypothesis we should "expect" the number of white-collar workers in neighborhood A to be
+
+{\displaystyle 150\times {\frac {349}{650}}\approx 80.54} {\displaystyle 150\times {\frac {349}{650}}\approx 80.54}
+Then in that "cell" of the table, we have
+
+{\displaystyle {\frac {\left({\text{observed}}-{\text{expected}}\right)^{2}}{\text{expected}}}={\frac {\left(90-80.54\right)^{2}}{80.54}}\approx 1.11} {\displaystyle {\frac {\left({\text{observed}}-{\text{expected}}\right)^{2}}{\text{expected}}}={\frac {\left(90-80.54\right)^{2}}{80.54}}\approx 1.11}
+The sum of these quantities over all of the cells is the test statistic; in this case, {\displaystyle \approx 24.6} {\displaystyle \approx 24.6}. Under the null hypothesis, this sum has approximately a chi-squared distribution whose number of degrees of freedom are
+
+{\displaystyle ({\text{number of rows}}-1)({\text{number of columns}}-1)=(3-1)(4-1)=6} {\displaystyle ({\text{number of rows}}-1)({\text{number of columns}}-1)=(3-1)(4-1)=6}
+If the test statistic is improbably large according to that chi-squared distribution, then one rejects the null hypothesis of independence.
+
+A related issue is a test of homogeneity. Suppose that instead of giving every resident of each of the four neighborhoods an equal chance of inclusion in the sample, we decide in advance how many residents of each neighborhood to include. Then each resident has the same chance of being chosen as do all residents of the same neighborhood, but residents of different neighborhoods would have different probabilities of being chosen if the four sample sizes are not proportional to the populations of the four neighborhoods. In such a case, we would be testing "homogeneity" rather than "independence". The question is whether the proportions of blue-collar, white-collar, and no-collar workers in the four neighborhoods are the same. However, the test is done in the same way.
 
 
 ## Fisher's Exact test 
