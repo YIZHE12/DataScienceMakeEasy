@@ -24,10 +24,10 @@ where size_l is the number of neurons in l layer
 Later, people found out that by multiply the random initialization with a factor it can force the standard deviation of the weights close to 1. Therefore, we have the he and Xavier initalizaiton:
 
 (2) Relu - he initalization
-<img src = images/he.png height = 200>
+<img src = images/he.png height = 100>
 
 (3) Tanh - Xavier initalization
-<img src = images/Xavier.png height = 200>
+<img src = images/Xavier.png height = 100>
 
 ## Convolutional Neural Network
 
@@ -123,7 +123,27 @@ In image classification and object detection, usually you have one object. You c
 
 In object detection class, you have more than one object. For each object, you have two output - label (class) and bounding box coordinate (x, y, w, h)
 
-#### Sliding window
+Intersection over union (IOU):
+Evaluation of the correctness of the bounding box. One bounding box is the labelled data. One bouding box is our prediciton. IOU is the size of overlapping areas between the two bounding box / union of the areas of the two bounding box. If IOU >= 0.5, then we say the prediciton is correct.
+
+
+#### YOLO - you only look once
+It segmented the images to gird and output the prediction of each grid. The values of x, y is between 0 and 1. It means the distance from the corner (said top left) of the gird cell to (said top left) corner of the bounding box. Therefore, it used the sigmoid function. For w and h, it can be larger than 1, meaning it can extend outside the gird. Therefore, it used an exp function.
+
+Non-max suppresion: only keep the box with the highest pc if multiple box are selected for the same object
+
+For different grid flagging the same object, only keep the one with the highest IOU.
+
+Procedure of YOLO:
+1. Assume there are 19x19 grid, then each grid has the output as \[pc bx by bh bw] if there is one class
+
+2. Discard all boxes with pc<=0.6
+
+3. Pick the box with the largest pc output that as a prediction
+
+4. Discard any remainding box with IoU>=0.5 with the box output in the previous step
+
+
 
 
 
