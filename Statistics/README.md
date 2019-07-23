@@ -9,13 +9,13 @@
 ## [hypothesis testing](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/hypothesis-testing/):
     
 ## Z-test and t-test
-<img src = images/PDF_norm.png height = 100>
+<img src = images/PDF_norm.png height = 150>
 
 Before using either Z-test or t-test, always check if the distribution is normal! If the sample size is large or the population variance is known, use Z -test, otherwise use t-test. Often, when n>30, you can use z-test, and use the sample standard deviation/sqrt(sample size) as the estimation of the population standard deviation. Comparing the shape of t-test and z-test: t-test has a larger tail - more uncertainty. Meaning, for the same p-value, the critical value of t-test need to be closer to the center than the z-test.
 
-<img src = images/z-test.png height = 200>
+<img src = images/z-test.png height = 120>
 
-<img src = images/z-test2.png height = 200>
+<img src = images/z-test2.png height = 120>
 
 The normal distribution is commonly associated with the 68-95-99.7 rule which you can see in the image above. 68% of the data is within 1 standard deviation (σ) of the mean (μ), 95% of the data is within 2 standard deviations (σ) of the mean (μ), and 99.7% of the data is within 3 standard deviations (σ) of the mean (μ).
 
