@@ -14,6 +14,12 @@
 
 ## Chi-sqaure test
 
+A chi-square test for independence compares two variables in a contingency table to see if they are related. 
+
+<img src = chi-sqaure.png height = 100>
+
+
+
 ## Fisher's Exact test 
 The test is useful for categorical data that result from classifying objects in two different ways. It has small number of examples and it is also a rather conservative method, meaning the p value it calcultaed is usually large. The origin Fisher's exact test is like this: 
 
@@ -22,11 +28,15 @@ There is a women who claimed that she can tell the difference if the milk is put
 Another example is that:
 We have half female and male students. The null hypothesis is that they are equally likely to be studying at this time. We have observation number as followed:
 
-<img src = images/fisher.png height = 100>
+<img src = images/fisher.png height = 200>
 
 The p value will be:
 
 <img src = images/fisher2.png height = 100>
+
+Differnece between Fisher and Chi-square test:
+
+They are calculating the same thing using different ways. The Fisher's exact test always give the correct p value while the chi-sqaure test on;y gives you an approximate, which doesn't work for small dataset. The Fisher's exact test is more computationally expensive, therefore, often it is only be used for a small data set. However, it is recommended, when it is possible, used Fisher's exact test instead of Chi-sqaure test. 
 
 
 ## Type I error
