@@ -16,7 +16,7 @@
 
 A chi-square test for independence compares two variables in a contingency table to see if they are related. 
 
-<img src = chi-sqaure.png height = 100>
+<img src = images/chi-sqaure.png height = 100>
 
 
 
