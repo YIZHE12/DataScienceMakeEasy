@@ -85,7 +85,7 @@ One special case of CNN filter is the 1x1 filter. It serves as a cross channel p
 
 Resource:
 http://cs231n.stanford.edu/slides/2019/cs231n_2019_lecture09.pdf
-<img src = images/complex/LeNet5.png>
+<img src = images/complex.png>
 
 #### 1. LeNet-5 (1998)
 <img src = images/LeNet5.png height = 200>
