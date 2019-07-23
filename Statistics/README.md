@@ -10,7 +10,13 @@
     
 ## Z-test and t-test
 
-If the sample size is large or the population variance is known, use Z -test. If the sample size is small, use t-test. Often, when n<100, use t-test.
+Before using either Z-test or t-test, always check if the distribution is normal! If the sample size is large or the population variance is known, use Z -test, otherwise use t-test. Often, when n>30, you can use z-test, and use the sample standard deviation/sqrt(sample size) as the estimation of the population standard deviation.
+
+<img src = images/z-test.png height = 200>
+
+<img src = images/z-test2.png height = 200>
+
+
 
 
 ## [Chi-sqaure test](https://en.wikipedia.org/wiki/Chi-squared_test)
