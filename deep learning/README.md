@@ -5,26 +5,27 @@ https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization
 To avoid vanishing & exploding gradient, we need to initialize the nn's weight carefully. 
 
 An old fashion way to initialize the weight is to draw a even distribution weight with bound of <img src = images/bound.png height = 100>. 
-
-np.random.uniform(-sqrt(6)/(size_l + size_l-1), sqrt(6)/(size_l + size_l-1), size_l * size_l-1).reshape(size_l, size_l-1)
+```
+np.random.uniform(-sqrt(6)/(size_l + size_l-1), sqrt(6)/(size_l + size_l-1), (size_l, size_l-1))
+```
 
 However, this will create a vanishing or exploding gradients. Therefore, nowaday, it is rarely use. 
 
 For the b terms, usually, we set it to zero. For the W term, we can use several strategies based on the activation functions:
 
 (1) sigmoid - random initalization
-
+```
 np.random.randn(size_l, size_l-1)
-
+```
 where size_l is the number of neurons in l layer
 
 Later, people found out that by multiply the random initialization with a factor it can force the standard deviation of the weights close to 1. Therefore, we have the he and Xavier initalizaiton:
 
 (2) Relu - he initalization
-<img src = images/he.png>
+<img src = images/he.png height = 200>
 
 (3) Tanh - Xavier initalization
-<img src = images/Xavier.png>
+<img src = images/Xavier.png height = 200>
 
 ## Convolutional Neural Network
 
