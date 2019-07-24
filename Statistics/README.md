@@ -4,6 +4,27 @@
 
 ## [Data distribution](https://mathbitsnotebook.com/Algebra1/StatisticsData/STShapes.html)
 
+## [Experimental Design]
+
+Experimental design has four main components:
+
+(1) Control: compare treatment of interest of a control group
+
+(2) Randomize: randomly assign subjects to treatments
+
+(3) Replicate: collect a sufficiently large sample, or replicate the entrie study
+
+(4) Block: block for variables known or suspected to affect the outcome
+
+For examples, you want to know if an energy gel will enhance your sport performance. Your subjects have amateur athletes and pros. These are your blocks. You will want to randomly assign equal number of amateur athletes and pros into each group (with or without the energy gel). Blocking is like stratifying. 
+
+Blocking vs explanatory variables
+
+(1) explanatory variables: factors, which are conditions that we can impose on experimental units
+
+(2) blocking variables: characteristics that the experimental units come with
+
+
 ## [maximum likelihood](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
 
 ## [hypothesis testing](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/hypothesis-testing/):
