@@ -123,8 +123,12 @@ In image classification and object detection, usually you have one object. You c
 
 In object detection class, you have more than one object. For each object, you have two output - label (class) and bounding box coordinate (x, y, w, h)
 
-Intersection over union (IOU):
+##### Intersection over union (IOU):
+
 Evaluation of the correctness of the bounding box. One bounding box is the labelled data. One bouding box is our prediciton. IOU is the size of overlapping areas between the two bounding box / union of the areas of the two bounding box. If IOU >= 0.5, then we say the prediciton is correct.
+
+###### Anchor box:
+Use different shape of boxes. Each anchor box has its own associated prediction in terms of [pc bx by bh bw c1 c2 c3]
 
 
 #### YOLO - you only look once
@@ -141,11 +145,9 @@ Procedure of YOLO:
 
 3. Pick the box with the largest pc output that as a prediction
 
-4. Discard any remainding box with IoU>=0.5 with the box output in the previous step
+4. Discard any remainding box with IoU>=0.5 with the selected box above - in other words, removed box that is well overlapped with the selected box
 
-
-
-
+What if you have two anchor boxes but three objects in the same grid cell? That's one case that this algorithm doesn't handle well. Hopefully, it won't happen. But if it does, this algorithm doesn't have a great way of handling it. I will just influence some default tiebreaker for that case. Or what if you have two objects associated with the same grid cell, but both of them have the same anchor box shape? Again, that's another case that this algorithm doesn't handle well.
 
 
 #### 3. GAN
