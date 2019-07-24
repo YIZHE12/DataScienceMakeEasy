@@ -1,6 +1,6 @@
 # R in statistics
 
-resources:
+## Resources:
 
 [R very short introduction](https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf)
 
