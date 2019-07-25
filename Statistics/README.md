@@ -24,6 +24,23 @@ Blocking vs explanatory variables
 
 (2) blocking variables: characteristics that the experimental units come with
 
+## Probability
+
+Disjoint event: two events are mutually exclusive
+
+Disjiont event A and B, P(A or B) = P(A) + P(B)
+
+For all event: P(A or B) = P(A) + P(B) - P(A and B), if A and B are disjoint event, then P(A and B) = 0, therefore, P(A or B) = P(A) + P(B)
+
+Complementary event (A and not A) is always disjoint events
+
+if P(A|B) = P(A), then A and B are independent events
+
+if A and B are independent events, P(A and B) = P(A) x P(B)
+
+
+
+
 
 ## [maximum likelihood](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
 
