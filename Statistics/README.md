@@ -16,6 +16,8 @@ When p is large, a binominal distribution is similar to a normal distribution. T
 
 <img src = images/bi4.png height = 400>
 
+Take home messages:
+if np and n(1-p) both >10, we can use normal distribution to approximate the binominal distribution with the mean and standard deviation calcualted as above.
 
 ## [Experimental Design]
 
