@@ -6,7 +6,7 @@
 
 binomial distribution
 
-<img src = images/bi1.png height = 100>
+<img src = images/bi1.png height = 200>
 
 <img src = images/bi2.png height = 100>
 
