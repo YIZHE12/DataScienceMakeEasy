@@ -4,7 +4,7 @@
 
 ## [Data distribution](https://mathbitsnotebook.com/Algebra1/StatisticsData/STShapes.html)
 
-binomial distribution
+### Binomial distribution
 
 <img src = images/bi1.png height = 200>
 
