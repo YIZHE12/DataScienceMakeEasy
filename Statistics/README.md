@@ -4,6 +4,13 @@
 
 ## [Data distribution](https://mathbitsnotebook.com/Algebra1/StatisticsData/STShapes.html)
 
+binomial distribution
+
+<img src = images/bi1.png height = 100>
+
+<img src = images/bi2.png height = 100>
+
+
 ## [Experimental Design]
 
 Experimental design has four main components:
