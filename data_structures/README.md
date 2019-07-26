@@ -74,9 +74,14 @@ def delete_first(self):
 ```
 
 ## Queue
-A queue is the opposite as a stack, it is first in first out. It has a head and a detail. Adding an element from the top is called 'inqueue', removing an element from the bottom is called 'dequeue'.
+A queue is the opposite as a stack, it is first in first out. It has a head and a detail. Adding an element from the top is called 'enqueue', removing an element from the bottom is called 'deque'. A dqueue is a double queue, which you can add and remove things from both ways. A priority queue is a queue where you added 'priority' into the element, the highest priority element will always get removed first, which is not following the first in first out rule. However, if there is a tie in priority, the oldest element will be removed first.
 
 <img src = images/queue.png height = 200>
+
+In python, there is a deque implementation:
+```
+from collections import deque
+```
 
 
 
