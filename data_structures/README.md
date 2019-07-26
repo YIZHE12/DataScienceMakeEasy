@@ -20,6 +20,60 @@ A set is a container that stores a collection of unique values over a given comp
 ## Link List
 In python, every time when you insert an element to a list, new storage of the entire list will be created and the elemenets need to be shifted to move room. This means it is quite not efficient when the list is large. Therefore, in this situation, we used link list instead, which doesn't recreate the storage neither does it require shifting. However, it does eliminate the constant time direct element access available with the array and Python list. As its name implies, the link strucutre has to been accessed based on the 'link order'. The singly linked list is a linear structure in which traversals start at the front and progress, one element at a time, to the end. Other variations include the circularly linked, the doubly linked, and the circularly doubly linked lists.
 
+```
+class Element(object):
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class LinkedList(object):
+    def __init__(self, head=None):
+        self.head = head
+        
+def append(self, new_element):
+    current = self.head
+    if self.head:
+        while current.next:
+            current = current.next
+        current.next = new_element
+    else:
+        self.head = new_element
+```
+
+## Stack
+
+First in last out structure. Python already has an implementation of stack using list, you can use append and pop directly.
+
+```
+>>> stack = [3, 4, 5]
+>>> stack.append(6)
+>>> stack.append(7)
+>>> stack
+[3, 4, 5, 6, 7]
+>>> stack.pop()
+7
+>>> stack
+[3, 4, 5, 6]
+>>> stack.pop()
+6
+>>> stack.pop()
+5
+>>> stack
+[3, 4]
+
+```
+
+or with a linked list, you can do 
+```
+def delete_first(self):
+    deleted = self.head
+    if self.head:
+        self.head = self.head.next
+        deleted.next = None
+    return deleted
+```
+
+
 ## Heap
 An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. When a value is extracted and removed from the heap, it can only come from the root node. A node of a tree (i) has parents(i/2) and left node (2 * i) and right node (2 * i + 1), i starting from 1 in root.
 
