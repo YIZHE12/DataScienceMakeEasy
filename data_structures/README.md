@@ -17,33 +17,6 @@ A one-dimensional array is composed of multiple sequential elements stored in co
 
 A set is a container that stores a collection of unique values over a given comparable domain in which the stored values have no particular ordering.
 
-  Set(): Creates a new set initialized to the empty set.
-  
-  length(): Returns the number of elements in the set, also known as the
-cardinality. Accessed using the len() function.
-
-  contains ( element ): Determines if the given value is an element of the set
-and returns the appropriate boolean value. Accessed using the in operator.
-
-  add( element ): Modifies the set by adding the given value or element to the set if the element is not already a member. If the element is not unique, no action is taken and the operation is skipped.
-  
-  remove( element ): Removes the given value from the set if the value is con- tained in the set and raises an exception otherwise.
-  
-  equals ( setB ): Determines if the set is equal to another set and returns a boolean value. For two sets, A and B, to be equal, both A and B must contain the same number of elements and all elements in A must also be elements in B. If both sets are empty, the sets are equal. Access with == or !=.
-  
-  isSubsetOf( setB ): Determines if the set is a subset of another set and re- turns a boolean value. For set A to be a subset of B, all elements in A must also be elements in B.
-  
-  union( setB ): Creates and returns a new set that is the union of this set and setB. The new set created from the union of two sets, A and B, contains all elements in A plus those elements in B that are not in A. Neither set A nor set B is modified by this operation.
-  
-  intersect(setB): Creates and returns a new set that is the intersection of this set and setB. The intersection of sets A and B contains only those elements that are in both A and B. Neither set A nor set B is modified by this operation.
-  
-  difference( setB ): Creates and returns a new set that is the difference of this set and setB. The set difference, A−B, contains only those elements that are in A but not in B. Neither set A nor set B is modified by this operation.
-
-  iterator (): Creates and returns an iterator that can be used to iterate over
-the collection of items.
-
-
-
 ## Link List
 In python, every time when you insert an element to a list, new storage of the entire list will be created and the elemenets need to be shifted to move room. This means it is quite not efficient when the list is large. Therefore, in this situation, we used link list instead, which doesn't recreate the storage neither does it require shifting. However, it does eliminate the constant time direct element access available with the array and Python list. As its name implies, the link strucutre has to been accessed based on the 'link order'. The singly linked list is a linear structure in which traversals start at the front and progress, one element at a time, to the end. Other variations include the circularly linked, the doubly linked, and the circularly doubly linked lists.
 
