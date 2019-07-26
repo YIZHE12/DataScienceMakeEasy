@@ -8,11 +8,13 @@
 
 [Imbalanced data](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
-___
-## [Statistic](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/Statistics)
 
-___   
-## Algorithm and Data Struture
+## [Statistic](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/Statistics)
+ 
+## [Data Structure](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/data_structures)
+
+## Algorithm 
+
 Resource: 
 
 Programming practice: https://practice.geeksforgeeks.org/; Hacker earth; Hacker rank; Leetcode
@@ -20,19 +22,6 @@ Programming practice: https://practice.geeksforgeeks.org/; Hacker earth; Hacker 
 MIT open course: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/
 
 Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%20Using%20Python.pdf
-
-### Data Structure:
-Heap: An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. When a value is extracted and removed from the heap, it can only come from the root node. A node of a tree (i) has parents(i/2) and left node (2 * i) and right node (2 * i + 1), i starting from 1 in root.
-
-Max Heap: The key of a node >= the key of its children
-
-<img src = 'image/heap.png'>
-
-
-Inserting or removing a node in the max heap is O(logN) - worst case senario need to work all the way up to the root (logN levels)
-Creating a max heal is O(N) by doing bottom up - building the heat from the bottom and work the way up, when you reach the top, the worst case is that node need to move all the way down, but as there is less node has large height, we can prove that it has a linear upper bound: https://www.youtube.com/watch?v=MiyLo8adrWw
-
-Doing a heap sort is O(NlogN)
 
 ### Divide and Conquer
 
