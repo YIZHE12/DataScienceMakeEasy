@@ -73,6 +73,13 @@ def delete_first(self):
     return deleted
 ```
 
+## Queue
+A queue is the opposite as a stack, it is first in first out. It has a head and a detail. Adding an element from the top is called 'inqueue', removing an element from the bottom is called 'dequeue'.
+
+<img src = images/queue.png height = 200>
+
+
+
 
 ## Heap
 An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. When a value is extracted and removed from the heap, it can only come from the root node. A node of a tree (i) has parents(i/2) and left node (2 * i) and right node (2 * i + 1), i starting from 1 in root.
@@ -86,6 +93,7 @@ Inserting or removing a node in the max heap is O(logN) - worst case senario nee
 Creating a max heal is O(N) by doing bottom up - building the heat from the bottom and work the way up, when you reach the top, the worst case is that node need to move all the way down, but as there is less node has large height, we can prove that it has a linear upper bound: https://www.youtube.com/watch?v=MiyLo8adrWw
 
 Doing a heap sort is O(NlogN)
+
 
 ## Acknowledgement:
 https://github.com/joeyajames/Python/tree/master/LinkedLists
