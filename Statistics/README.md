@@ -10,6 +10,12 @@
 
 <img src = images/bi2.png height = 100>
 
+When p is large, a binominal distribution is similar to a normal distribution. Therefore, instead of calculating the binominal distribution for a certain value, we can calculate the area under the curve using a normal distribution instead. For example:
+
+<img src = images/bi3.png height = 200>
+
+<img src = images/bi4.png height = 200>
+
 
 ## [Experimental Design]
 
