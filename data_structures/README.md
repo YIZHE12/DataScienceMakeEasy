@@ -114,7 +114,8 @@ Load factor = number of item stored / total size of the hash table
 
 (4) resolve any collisons
 
-
+## Tree
+Tree is an extension of linked list. Instead of having only one next elements, a tree can have many. A tree can also be visualized as a graph. A tree doesn't have circle, regardless of the directions of the edges. In a tree, there is only one parents node, but one parent node can have many children nodes. Node without any children is called leaves. Node without a parent is called the root. 
 
 ## Heap
 An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. When a value is extracted and removed from the heap, it can only come from the root node. A node of a tree (i) has parents(i/2) and left node (2 * i) and right node (2 * i + 1), i starting from 1 in root.
