@@ -13,7 +13,7 @@ Space complexicity: O(1)
 ### Merge sort
 Another example of divide and conqueue
 
-[](https://en.wikipedia.org/wiki/File:Merge-sort-example-300px.gif)
+![](https://en.wikipedia.org/wiki/File:Merge-sort-example-300px.gif)
 
 Time complexicity: O(NlogN)
 
