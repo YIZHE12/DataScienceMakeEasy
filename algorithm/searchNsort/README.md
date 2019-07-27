@@ -25,7 +25,8 @@ Space complexicity: O(N)
 <img src = images/Merge-sort-example-300px.gif>
 
 ### Quick sort
-It is another inplace algorithm. It chose a pivot and move everything larger than it to one side, and everything smaller than it to another side. The worst case, it has time complexicity of N^2. However, the average time complexicity is NlogN. 
+It is another inplace algorithm. It chose a pivot and move everything larger than it to one side, and everything smaller than it to another side. The pivot is the element that is in the correct position after the iteration. The worst case, it has time complexicity of N^2. However, the average time complexicity is NlogN. 
+
 
 Space complexicity: O(N)
 
