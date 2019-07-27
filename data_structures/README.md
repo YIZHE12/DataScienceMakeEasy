@@ -88,6 +88,7 @@ from collections import deque
 ```
 
 ## Hash table
+https://www.youtube.com/watch?v=KyUTuwz_b7Q
 
 The index of the hash table is hidden in the content/value. In other words, the address of each key is calculated using the key iteself. The function to transfer the value to the index is called the hush function. 
 
