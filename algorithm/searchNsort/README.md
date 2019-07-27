@@ -1,10 +1,11 @@
-# Search
-https://visualgo.net/en/sorting
+## Search
 
-## Binary search
+
+### Binary search
 Use the divide and conqueue algorithm, to cut the sorted array by half and compare.
 
 ## Sort
+https://visualgo.net/en/sorting
 ### Bubble sort
 
 Compare every two elements one by one for N-1 times, each time, the largest element will bubble up to the right. It is an inplace algorithm that doesn't require extra memory.
