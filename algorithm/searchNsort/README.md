@@ -11,7 +11,7 @@ Time complexicity: O(N^2)
 Space complexicity: O(1)
 
 ### Merge sort
-Another example of divide and conqueue
+Another example of divide and conqueue. First divide the list into the smallest unit (1 element), then compare each element with the adjacent list to sort and merge the two adjacent lists. Finally all the elements are sorted and merged.
 
 <img src = images/Merge-sort-example-300px.gif>
 
