@@ -87,6 +87,31 @@ In python, there is a deque implementation:
 from collections import deque
 ```
 
+## Hash table
+
+The index of the hash table is hidden in the content/value. In other words, the address of each key is calculated using the key iteself. The function to transfer the value to the index is called the hush function. 
+
+Isertion, deletion and retrieval occur all in O(1).
+
+#### Collisions: when two items have the same index
+
+Load factor = number of item stored / total size of the hash table
+
+#### Solutions for collisions:
+
+(1) open addressing: place the later item into the next avaiable location, this is called linear probing. You can also use other algorithm to place the items in another address, such as plus 3 rehash, quadratic probing (failed attempts)^2, double hashing
+
+(2) close addressing: used a linked list. The index is the head of the linked list. Items have the same index are stored in the same linked list.
+
+#### Objective of hash function:
+
+(1) minimize collisions
+
+(2) uniform distribution of hash values
+
+(3) easy to calcultate
+
+(4) resolve any collisons
 
 
 
