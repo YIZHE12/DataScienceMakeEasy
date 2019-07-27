@@ -1,4 +1,6 @@
 # Search
+https://visualgo.net/en/sorting
+
 ## Binary search
 Use the divide and conqueue algorithm, to cut the sorted array by half and compare.
 
