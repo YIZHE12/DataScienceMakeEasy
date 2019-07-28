@@ -21,3 +21,5 @@ Postorder -> left, right, root at the end
 - a tree structure is pre-sorted so that left node < right node, children < parents
 
 <img src = images/BST.png height = 200>
+
+search, insert, delete - O(logN) for balanced BST, for unbalanced BST, it is O(N)
