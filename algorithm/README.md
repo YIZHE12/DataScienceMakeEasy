@@ -17,7 +17,7 @@ Postorder -> left, right, root at the end
 #### Depth-First Search (DFS) 
 - if a node has a child, visit the child node first
 
-#### Binary search tree (BST)
+#### Binary search tree [(BST)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/Binary_search_tree.ipynb)
 - a tree structure is pre-sorted so that left node < right node, children < parents
 
 <img src = images/BST.png height = 200>
