@@ -139,6 +139,7 @@ A way to keep the tree balanced. It has following rules:
 
 5. Every path from a given node to any of its descendant NIL nodes contains the same number of black nodes.
 
+During insertion, you always insert a red node, but it can be changed color later.
 
 ## Heap
 An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. Although it is a tree structure, it is often stored as an array to save space. 
