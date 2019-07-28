@@ -20,4 +20,4 @@ Postorder -> left, right, root at the end
 #### Binary search tree (BST)
 - a tree structure is pre-sorted so that left node < right node, children < parents
 
-<img src = images/BST.png height = 100>
+<img src = images/BST.png height = 200>
