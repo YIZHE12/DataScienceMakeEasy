@@ -125,6 +125,21 @@ delete - O(N)
 
 insert - O(logN)
 
+### Red-black-tree
+
+A way to keep the tree balanced. It has following rules:
+
+1. Each node is either red or black.
+
+2. The root is black. 
+
+3. All leaves (NIL) are black.
+
+4. If a node is red, then both its children are black.
+
+5. Every path from a given node to any of its descendant NIL nodes contains the same number of black nodes.
+
+
 ## Heap
 An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. Although it is a tree structure, it is often stored as an array to save space. 
 
