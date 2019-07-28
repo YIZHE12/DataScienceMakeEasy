@@ -128,7 +128,7 @@ insert - O(logN)
 ## Heap
 An array represented by an almost (unless you insert null then it is totally) compeleted binary tree. Although it is a tree structure, it is often stored as an array to save space. 
 
-<img src = images/treevsarray.png>
+<img src = images/treevsarray.png height = 200>
 
 When a value is extracted and removed from the heap, it can only come from the root node. In the array from: A node of a tree (i) has parents(i/2) and left node (2 * i) and right node (2 * i + 1), i starting from 1 in root.
 
