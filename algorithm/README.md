@@ -1,4 +1,7 @@
-https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513
+Resource:
+
+Online course: https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513
+ebook: http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf
 
 ## Graph search 
 
