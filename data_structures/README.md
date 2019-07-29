@@ -158,6 +158,25 @@ Creating a max heal is O(N) by doing bottom up - building the heat from the bott
 
 Doing a heap sort is O(NlogN)
 
+## Graph
+A graph is also called network. Tree is a special case of tree. It has nodes (vertices) and edges. Edges can have direction and weights. 
+
+Connectivity: The minimum number of nodes that need to be removed to make a graph become disconnected. 
+
+Graph representation:
+
+Vertex object: edges:xx
+Edge object: vertices: xx
+
+1. Edge list:
+[[0,1], [1,2], [1,3], [2,3]] each number is the vertex of the edge
+
+<img src = images/graph1.png height = 200>
+
+2. Adjacency list
+
+<img src = images/graph2.png height = 200>
+
 
 ## Acknowledgement:
 https://github.com/joeyajames/Python/tree/master/LinkedLists
