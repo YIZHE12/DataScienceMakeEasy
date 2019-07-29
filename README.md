@@ -13,7 +13,7 @@
  
 ## [Data Structure](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/data_structures)
 
-## Algorithm
+## [Algorithm](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/algorithm/README.md)
 
 ## Machine Learning 
 
