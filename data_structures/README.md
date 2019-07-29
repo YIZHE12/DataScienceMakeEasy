@@ -177,6 +177,11 @@ Edge object: vertices: xx
 
 <img src = images/graph2.png height = 200>
 
+3. Adjacency Matrix
+
+<img src = images/graph2.png height = 200>
+
+Symetric matrix where one edges appears twice. Each row/column represents one vertex. Unless there is an edge linked back to the vertex itself, the central diagnose direction is always zero.
 
 ## Acknowledgement:
 https://github.com/joeyajames/Python/tree/master/LinkedLists
