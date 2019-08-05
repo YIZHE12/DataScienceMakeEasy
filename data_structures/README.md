@@ -5,6 +5,10 @@ https://www.coursera.org/learn/data-structures/home/welcome
 
 https://leetcode.com/explore/
 
+Big O of data structure in python:
+
+https://wiki.python.org/moin/TimeComplexity#list
+
 ## List
 
 A python list contains more storage space than is needed to store the items currently in the list. This extra space, the size of which can be up to twice the necessary capacity, allows for quick and easy expansion as new items are added to the list.
