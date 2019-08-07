@@ -58,9 +58,7 @@ If we are only interested in a shortest path between vertices source and target,
 ### Dynamic programming
 
 
-## Graph search 
 
-- 0(N), no go back to the same node twice
 
 ## Tree search
 #### Breadth-First Search [(BFS)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/binary_tree.ipynb) 
@@ -81,3 +79,33 @@ Postorder -> left, right, root at the end
 <img src = images/BST.png height = 200>
 
 search, insert, delete - O(logN) for balanced BST, for unbalanced BST, it is O(N)
+
+## Graph search 
+
+- 0(N), no go back to the same node twice
+- Also has [DFS and BST](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/Graph_dfs_bfs.ipynb)
+
+### Shortest path problem:
+1. Unweighted graph
+
+It is just a DFS or BST problem until you find the node you are looking for.
+
+2. Weighted graph
+
+One famous algorithm is called Dijkstra's Algorithm:
+First we give all node a distance property, the distance of the starting node is 0, while the rest is infinity. A common implementation of the algorithm is to used the min priority queue to get the minimum value. We start from the starting node, and update the distance property of the node that it connected, which equal to the weight of the edge. Then pick the node with the smallest number in the distance queue. It is O(|V|^2). If the priority queue was implemented efficiently, the runtime is O(|E|+|V|log(|V|)).
+
+### Knapsack problem:
+
+You have a bag to pack with weight limit. You want to pack as many items as possible. How to choose the item?
+
+1. Brute force: O(2^n) - think about each item as either 0 or 1. 0 means packing, 1 means no.
+This is an exponential time, we would prefer a polynomial time algorithm, such as O(n^2) or linear time, such as O(3n).
+
+### Traveling salesman problem
+
+It is an NP hard problem.
+
+
+
+
