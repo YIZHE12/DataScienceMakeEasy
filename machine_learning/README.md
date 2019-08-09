@@ -21,4 +21,12 @@ This is a vectorization of our hypothesis function for one training example:
 
 <img src = images/gd_linear_regression3.png height = 100>
 
+Note that X0 = 1
+
+Applying gradient descent, we will have:
+
+<img src = images/gd_linear_regression4.png height = 100>
+
+
+
 
