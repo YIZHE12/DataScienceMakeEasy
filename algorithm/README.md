@@ -106,6 +106,25 @@ This is an exponential time, we would prefer a polynomial time algorithm, such a
 
 It is an NP hard problem.
 
+### Memoization
+Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. (Source: wikipedia)
+
+In python, it can be simpliy done by using lru_cache on top your orignal recursive function. See my [example:](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/algorithm/recursive/Fibonacci.ipynb)
+
+'''
+from functools import lru_cache
+
+@lru_cache(maxsize = 1000)
+def get_fib(position):
+    if position == 0:
+        return(0)
+    if position == 1:
+        return(1)
+    else:
+        output = get_fib(position-1)+get_fib(position-2)
+        return(output)
+    return -1
+'''
 
 
 
