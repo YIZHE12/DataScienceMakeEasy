@@ -1,5 +1,5 @@
 ### Gradient Descent
 <img src = images/gd_eq.gif>
-<img src = images/gd_graph.png>
+<img src = images/gd_graph.png height = 200>
 
 
