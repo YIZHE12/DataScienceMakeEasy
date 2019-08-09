@@ -10,7 +10,9 @@ It is a function to update our hypothesis parameter in the cost function space:
 
 
 Gradient Descent For Linear Regression:
+
 <img src = images/gd_linear_regression1.png height = 200>
+
 <img src = images/gd_linear_regression2.png height = 200>
 
 
