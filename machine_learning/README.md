@@ -25,7 +25,7 @@ Note that X0 = 1
 
 Applying gradient descent, we will have:
 
-<img src = images/gd_linear_regression4.png height = 300>
+<img src = images/gd_linear_regression4.png height = 600>
 
 You must perform feature normalization or scaling before the linear regression with gradient descent
 
