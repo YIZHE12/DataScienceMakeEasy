@@ -111,7 +111,7 @@ Memoization is an optimization technique used primarily to speed up computer pro
 
 In python, it can be simpliy done by using lru_cache on top your orignal recursive function. See my [example:](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/algorithm/recursive/Fibonacci.ipynb)
 
-'''
+```
 from functools import lru_cache
 
 @lru_cache(maxsize = 1000)
@@ -124,7 +124,7 @@ def get_fib(position):
         output = get_fib(position-1)+get_fib(position-2)
         return(output)
     return -1
-'''
+```
 
 
 
