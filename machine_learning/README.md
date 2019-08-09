@@ -25,8 +25,18 @@ Note that X0 = 1
 
 Applying gradient descent, we will have:
 
-<img src = images/gd_linear_regression4.png height = 100>
+<img src = images/gd_linear_regression4.png height = 300>
 
 You must perform feature normalization or scaling before the linear regression with gradient descent
+
+For different gradient descent algorithm:
+
+http://ruder.io/optimizing-gradient-descent/
+
+
+4. Features and Polynomial Regression
+
+In order to bring non-linearity to linear regression, one can do feature engineering, such as sqrt(x1) or x1 * x2, x1^2 etc. However, one must remember to scale each engineered features.
+
 
 
