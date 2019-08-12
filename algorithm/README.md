@@ -14,6 +14,14 @@ http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algori
 
 https://runestone.academy/runestone/books/published/pythonds/index.html
 
+### Recursion
+
+A recursive algorithm must have a base case.
+
+A recursive algorithm must change its state and move toward the base case.
+
+A recursive algorithm must call itself, recursively.
+
 ### Divide and Conquer
 
 ### Randomized Algorithm
