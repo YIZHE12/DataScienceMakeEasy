@@ -12,6 +12,8 @@ Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%2
 
 http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf
 
+https://runestone.academy/runestone/books/published/pythonds/index.html
+
 ### Divide and Conquer
 
 ### Randomized Algorithm
