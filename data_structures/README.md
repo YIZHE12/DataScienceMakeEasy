@@ -9,6 +9,9 @@ Big O of data structure in python:
 
 https://wiki.python.org/moin/TimeComplexity#list
 
+## Linear structure:
+Once an item is added, it stays in that position relative to the other elements that came before and came after it. Collections such as these are often referred to as linear data structures. It includes: list, stack and queue.
+
 ## List
 
 A python list contains more storage space than is needed to store the items currently in the list. This extra space, the size of which can be up to twice the necessary capacity, allows for quick and easy expansion as new items are added to the list.
@@ -50,7 +53,11 @@ def append(self, new_element):
 
 ## Stack
 
-First in last out structure. Python already has an implementation of stack using list, you can use append and pop directly.
+A stack (sometimes called a “push-down stack”) is an ordered collection of items where the addition of new items and the removal of existing items always takes place at the same end. This end is commonly referred to as the “top.” The end opposite the top is known as the “base.”
+
+It is a  LIFO, last-in first-out structure. Python already has an implementation of stack using list, you can use append and pop directly.
+
+
 
 ```
 >>> stack = [3, 4, 5]
@@ -82,7 +89,7 @@ def delete_first(self):
 ```
 
 ## Queue
-A queue is the opposite as a stack, it is first in first out. It has a head and a detail. Adding an element from the top is called 'enqueue', removing an element from the bottom is called 'deque'. A dqueue is a double queue, which you can add and remove things from both ways. A priority queue is a queue where you added 'priority' into the element, the highest priority element will always get removed first, which is not following the first in first out rule. However, if there is a tie in priority, the oldest element will be removed first.
+A queue is the opposite as a stack, it is LIFO, last-in first-out. It has a head and a detail. Adding an element from the top is called 'enqueue', removing an element from the bottom is called 'deque'. A dqueue is a double queue, which you can add and remove things from both ways. A priority queue is a queue where you added 'priority' into the element, the highest priority element will always get removed first, which is not following the first in first out rule. However, if there is a tie in priority, the oldest element will be removed first.
 
 <img src = images/queue.png height = 200>
 
