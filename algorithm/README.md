@@ -102,8 +102,15 @@ It is just a DFS or BST problem until you find the node you are looking for.
 
 2. Weighted graph
 
-One famous algorithm is called Dijkstra's Algorithm:
-First we give all node a distance property, the distance of the starting node is 0, while the rest is infinity. A common implementation of the algorithm is to used the min priority queue to get the minimum value. We start from the starting node, and update the distance property of the node that it connected, which equal to the weight of the edge. Then pick the node with the smallest number in the distance queue. It is O(|V|^2). If the priority queue was implemented efficiently, the runtime is O(|E|+|V|log(|V|)).
+One famous algorithm is called [Dijkstra's Algorithm](https://www.youtube.com/watch?v=zXfDYaahsNA):
+
+First we give all node a distance property, the distance of the starting node is 0, while the rest is infinity. A common implementation of the algorithm is to used the min priority queue to get the minimum value. We start from the starting node, and update the distance property of the node that it connected, which equal to the weight of the edge. Then pick the node with the smallest number in the distance queue. 
+
+A naive implementation of this algorithm will result in O(VE), as we search each Vertice, and for each vertice, we search each edge.
+
+If the priority queue was implemented efficiently, the runtime is O((|E|+|V|)log(|V|)).
+
+We can also use heap instead of priority queue.
 
 ### Knapsack problem:
 
