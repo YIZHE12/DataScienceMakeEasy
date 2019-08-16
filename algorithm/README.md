@@ -67,7 +67,17 @@ If we are only interested in a shortest path between vertices source and target,
 
 ### Dynamic programming
 
+A divide-and-conquer algorithm does more work thannecessary, repeaedly sovlving the common subsubproblem. A dynamic-programming algorithm, on contrast, only solve the subsubproblems just once and then saves its answer in a table, thereby avoiding the same problem. Typically, it is used in optimization problems, where there are many possible solutions.
 
+The four steps of dynamic programming:
+
+1. Characterize the structure of an optimal solution.
+
+2. Recursively define the value of an optimal solution.
+
+3. Compute the value of an optimal solution, typically in a bottom-up fashion.
+
+4. Construct an optimal solution from computed information. (This can be omitted if we don't need to solution itself, but only the optimal value.)
 
 
 ## Tree search
