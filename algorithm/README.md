@@ -8,6 +8,8 @@ MIT open course: https://ocw.mit.edu/courses/electrical-engineering-and-computer
 
 https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513
 
+https://www.youtube.com/user/krispykarim/playlists
+
 Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%20Using%20Python.pdf
 
 http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf
