@@ -8,8 +8,6 @@ MIT open course: https://ocw.mit.edu/courses/electrical-engineering-and-computer
 
 https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513
 
-https://www.youtube.com/user/krispykarim/playlists
-
 Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%20Using%20Python.pdf
 
 http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf
@@ -81,6 +79,7 @@ The four steps of dynamic programming:
 
 4. Construct an optimal solution from computed information. (This can be omitted if we don't need to solution itself, but only the optimal value.)
 
+For more in dynamic programming: https://www.youtube.com/watch?v=W2ote4jCuYw&list=PLyEvk8ZeQDMVbsg7CEfT0NV3s3GkMx1vN&index=1
 
 ## Tree search
 #### Breadth-First Search [(BFS)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/binary_tree.ipynb) 
