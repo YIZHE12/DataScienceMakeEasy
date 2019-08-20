@@ -26,7 +26,12 @@ create temporally table:
 <img src = images/SQL_insert1.png height = 160>
 <img src = images/SQL_insert2.png height = 300>
 
-
+4. Comments
+```
+- - for one line 
+/* 
+*/ for a section
+```
 ## NoSQL (Not only SQL)
 
 
