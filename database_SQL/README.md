@@ -20,7 +20,7 @@ The five basic command of SQL CREATE, INSERT, SELECT, UPDATE and DELETE
 
 create temporally table:
 
-<img src = images/SQL_temp_table.png height = 200>
+<img src = images/SQL_temp_table.png height = 100>
 
 3. INSERT
 <img src = images/SQL_insert1.png height = 160>
