@@ -11,12 +11,22 @@ A entity is a table in the database, and attribute is a column. For example, boo
 ## SQL (Structured Query Language)
 The five basic command of SQL CREATE, INSERT, SELECT, UPDATE and DELETE
 
-1. Select data
+1. SELECT
 
 <img src = images/SQL_limit.png height = 200>
+
+2. CREATE
 <img src = images/SQL_create.png height = 200>
+
+create temporally table:
+
+<img src = images/SQL_temp_table.png height = 200>
+
+3. INSERT
 <img src = images/SQL_insert1.png height = 160>
 <img src = images/SQL_insert2.png height = 300>
+
+
 ## NoSQL (Not only SQL)
 
 
