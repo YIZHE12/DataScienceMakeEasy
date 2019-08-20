@@ -15,7 +15,7 @@ The five basic command of SQL CREATE, INSERT, SELECT, UPDATE and DELETE
 
 <img src = images/SQL_limit.png height = 200>
 <img src = images/SQL_create.png height = 200>
-<img src = images/SQL_insert1.png height = 100>
+<img src = images/SQL_insert1.png height = 160>
 <img src = images/SQL_insert2.png height = 300>
 ## NoSQL (Not only SQL)
 
