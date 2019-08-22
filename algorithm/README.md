@@ -13,8 +13,14 @@ Book: http://home.ustc.edu.cn/~huang83/ds/Data%20Structures%20and%20Algorithms%2
 http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf
 
 https://runestone.academy/runestone/books/published/pythonds/index.html
+___
 
-### Recursion
+## Randomized Algorithm
+___
+
+## Divide and Conquer
+
+## Recursion
 
 A recursive algorithm must have a base case.
 
@@ -22,9 +28,8 @@ A recursive algorithm must change its state and move toward the base case.
 
 A recursive algorithm must call itself, recursively.
 
-### Divide and Conquer
 
-### Randomized Algorithm
+
 
 ### Greedy Algorithm: 
 A loose definition Tim Roughgarden: from iteratively make "my opic" decision - decision that seems to be good at the time, and hope everyting workds out at the end. A more formal definition: A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage[1] with the intent of finding a global optimum. 
@@ -80,6 +85,31 @@ The four steps of dynamic programming:
 4. Construct an optimal solution from computed information. (This can be omitted if we don't need to solution itself, but only the optimal value.)
 
 For more in dynamic programming: https://www.youtube.com/watch?v=W2ote4jCuYw&list=PLyEvk8ZeQDMVbsg7CEfT0NV3s3GkMx1vN&index=1
+#### Memoization
+Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. (Source: wikipedia)
+
+In python, it can be simpliy done by using lru_cache on top your orignal recursive function. See my [example:](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/algorithm/recursive/Fibonacci.ipynb)
+
+```
+from functools import lru_cache
+
+@lru_cache(maxsize = 1000)
+def get_fib(position):
+    if position == 0:
+        return(0)
+    if position == 1:
+        return(1)
+    else:
+        output = get_fib(position-1)+get_fib(position-2)
+        return(output)
+    return -1
+```
+#### Examples:Knapsack problem
+
+You have a bag to pack with weight limit. You want to pack as many items as possible. How to choose the item?
+
+1. Brute force: O(2^n) - think about each item as either 0 or 1. 0 means packing, 1 means no.
+This is an exponential time, we would prefer a polynomial time algorithm, such as O(n^2) or linear time, such as O(3n).
 
 ## Tree search
 #### Breadth-First Search [(BFS)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/binary_tree.ipynb) 
@@ -123,36 +153,10 @@ If the priority queue was implemented efficiently, the runtime is O((|E|+|V|)log
 
 We can also use heap instead of priority queue.
 
-### Knapsack problem:
-
-You have a bag to pack with weight limit. You want to pack as many items as possible. How to choose the item?
-
-1. Brute force: O(2^n) - think about each item as either 0 or 1. 0 means packing, 1 means no.
-This is an exponential time, we would prefer a polynomial time algorithm, such as O(n^2) or linear time, such as O(3n).
 
 ### Traveling salesman problem
 
 It is an NP hard problem.
-
-### Memoization
-Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. (Source: wikipedia)
-
-In python, it can be simpliy done by using lru_cache on top your orignal recursive function. See my [example:](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/algorithm/recursive/Fibonacci.ipynb)
-
-```
-from functools import lru_cache
-
-@lru_cache(maxsize = 1000)
-def get_fib(position):
-    if position == 0:
-        return(0)
-    if position == 1:
-        return(1)
-    else:
-        output = get_fib(position-1)+get_fib(position-2)
-        return(output)
-    return -1
-```
 
 ### Tail recursion
 Tail recursion is a recursion where the recursive call is the final instruction in the recursion function. And there should be only one recursive call in the function.
