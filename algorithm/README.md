@@ -19,8 +19,9 @@ ___
 ___
 
 ## Divide and Conquer
+A divide-and-conquer algorithm works by recursively breaking down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly. 
 
-## Recursion
+### Recursion
 
 A recursive algorithm must have a base case.
 
@@ -28,10 +29,57 @@ A recursive algorithm must change its state and move toward the base case.
 
 A recursive algorithm must call itself, recursively.
 
+#### Tail recursion
+Tail recursion is a recursion where the recursive call is the final instruction in the recursion function. And there should be only one recursive call in the function.
 
+The benefit of having tail recursion is that it could avoid the accumulation of stack overheads during the recursive calls, since the system could reuse a fixed amount space in the stack for each recursive call. 
 
+A tail recursion function can be executed as non-tail-recursion functions, i.e. with piles of call stacks, without impact on the result. Often, the compiler recognizes tail recursion pattern, and optimizes its execution. However, not all programming languages support this optimization. For instance, C, C++ support the optimization of tail recursion functions. On the other hand, Java and Python do not support tail recursion optimization.
 
-### Greedy Algorithm: 
+### Memoization
+Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. (Source: wikipedia)
+
+In python, it can be simpliy done by using lru_cache on top your orignal recursive function. See my [example:](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/algorithm/recursive/Fibonacci.ipynb)
+
+```
+from functools import lru_cache
+
+@lru_cache(maxsize = 1000)
+def get_fib(position):
+    if position == 0:
+        return(0)
+    if position == 1:
+        return(1)
+    else:
+        output = get_fib(position-1)+get_fib(position-2)
+        return(output)
+    return -1
+```
+
+### Dynamic programming
+
+A divide-and-conquer algorithm does more work thannecessary, repeaedly sovlving the common subsubproblem. A dynamic-programming algorithm, on contrast, only solve the subsubproblems just once and then saves its answer in a table, thereby avoiding the same problem. Typically, it is used in optimization problems, where there are many possible solutions.
+
+The four steps of dynamic programming:
+
+1. Characterize the structure of an optimal solution.
+
+2. Recursively define the value of an optimal solution.
+
+3. Compute the value of an optimal solution, typically in a bottom-up fashion.
+
+4. Construct an optimal solution from computed information. (This can be omitted if we don't need to solution itself, but only the optimal value.)
+
+For more in dynamic programming: https://www.youtube.com/watch?v=W2ote4jCuYw&list=PLyEvk8ZeQDMVbsg7CEfT0NV3s3GkMx1vN&index=1
+
+#### Examples of dynamic programming: Knapsack 0-1 problem
+
+You have a bag to pack with weight limit. You want to pack as many items as possible. How to choose the item?
+
+1. Brute force: O(2^n) - think about each item as either 0 or 1. 0 means packing, 1 means no.
+This is an exponential time, we would prefer a polynomial time algorithm, such as O(n^2) or linear time, such as O(3n).
+___
+## Greedy Algorithm: 
 A loose definition Tim Roughgarden: from iteratively make "my opic" decision - decision that seems to be good at the time, and hope everyting workds out at the end. A more formal definition: A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage[1] with the intent of finding a global optimum. 
 
 Many greeydy algorithm is actually not correct!
@@ -69,50 +117,10 @@ If we are only interested in a shortest path between vertices source and target,
     4      while u is defined:                       // Construct the shortest path with a stack S
     5          insert u at the beginning of S        // Push the vertex onto the stack
     6          u ← prev[u]                           // Traverse from target to source
-
-### Dynamic programming
-
-A divide-and-conquer algorithm does more work thannecessary, repeaedly sovlving the common subsubproblem. A dynamic-programming algorithm, on contrast, only solve the subsubproblems just once and then saves its answer in a table, thereby avoiding the same problem. Typically, it is used in optimization problems, where there are many possible solutions.
-
-The four steps of dynamic programming:
-
-1. Characterize the structure of an optimal solution.
-
-2. Recursively define the value of an optimal solution.
-
-3. Compute the value of an optimal solution, typically in a bottom-up fashion.
-
-4. Construct an optimal solution from computed information. (This can be omitted if we don't need to solution itself, but only the optimal value.)
-
-For more in dynamic programming: https://www.youtube.com/watch?v=W2ote4jCuYw&list=PLyEvk8ZeQDMVbsg7CEfT0NV3s3GkMx1vN&index=1
-#### Memoization
-Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. (Source: wikipedia)
-
-In python, it can be simpliy done by using lru_cache on top your orignal recursive function. See my [example:](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/algorithm/recursive/Fibonacci.ipynb)
-
-```
-from functools import lru_cache
-
-@lru_cache(maxsize = 1000)
-def get_fib(position):
-    if position == 0:
-        return(0)
-    if position == 1:
-        return(1)
-    else:
-        output = get_fib(position-1)+get_fib(position-2)
-        return(output)
-    return -1
-```
-#### Examples:Knapsack problem
-
-You have a bag to pack with weight limit. You want to pack as many items as possible. How to choose the item?
-
-1. Brute force: O(2^n) - think about each item as either 0 or 1. 0 means packing, 1 means no.
-This is an exponential time, we would prefer a polynomial time algorithm, such as O(n^2) or linear time, such as O(3n).
+___
 
 ## Tree search
-#### Breadth-First Search [(BFS)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/binary_tree.ipynb) 
+### Breadth-First Search [(BFS)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/binary_tree.ipynb) 
 - level first -> visit all nodes in the same level first before visiting the child nodes
 
 Preorder -> root first, then left, then right
@@ -121,15 +129,17 @@ Inorder ->  left, root in the middle, then right
 
 Postorder -> left, right, root at the end
 
-#### Depth-First Search (DFS) 
+### Depth-First Search (DFS) 
 - if a node has a child, visit the child node first
 
-#### Binary search tree [(BST)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/Binary_search_tree.ipynb)
+### Binary search tree [(BST)](https://github.com/YIZHE12/DataScienceMakeEasy/blob/master/data_structures/Binary_search_tree.ipynb)
 - a tree structure is pre-sorted so that left node < right node, children < parents
 
 <img src = images/BST.png height = 200>
 
 search, insert, delete - O(logN) for balanced BST, for unbalanced BST, it is O(N)
+
+___
 
 ## Graph search 
 
@@ -153,15 +163,12 @@ If the priority queue was implemented efficiently, the runtime is O((|E|+|V|)log
 
 We can also use heap instead of priority queue.
 
+__
+
+## NP hard problem
 
 ### Traveling salesman problem
 
 It is an NP hard problem.
 
-### Tail recursion
-Tail recursion is a recursion where the recursive call is the final instruction in the recursion function. And there should be only one recursive call in the function.
-
-The benefit of having tail recursion is that it could avoid the accumulation of stack overheads during the recursive calls, since the system could reuse a fixed amount space in the stack for each recursive call. 
-
-A tail recursion function can be executed as non-tail-recursion functions, i.e. with piles of call stacks, without impact on the result. Often, the compiler recognizes tail recursion pattern, and optimizes its execution. However, not all programming languages support this optimization. For instance, C, C++ support the optimization of tail recursion functions. On the other hand, Java and Python do not support tail recursion optimization.
 
