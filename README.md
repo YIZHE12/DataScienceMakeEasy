@@ -1,5 +1,5 @@
 # Data Science Make Easy
-### The purpose of this github repo is to put some basic topics in data science together
+The purpose of this github repo is to put some basic topics in data science together
 
 ## Data Hanlding
 [Missind data](https://www.kaggle.com/dansbecker/handling-missing-values)
