@@ -37,12 +37,13 @@ create temporally table:
 ### Filter SQL
 
 You often do 
-'''
+```
 SELECT column1_name, column2_name, column3_name
 FROM table_name
 WHERE column1_name =/>/< number/string
-'''
+```
 <img src = images/WHERE.png height = 150>
+
 <> means do not inlcude
 
 
