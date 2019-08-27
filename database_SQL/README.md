@@ -9,6 +9,7 @@ Three main building block for a data model: Entity, Attribute and relationship (
 A entity is a table in the database, and attribute is a column. For example, book as an entity, may have attributes as book_id, book_title, etc.
 
 ## SQL (Structured Query Language)
+### Basic SQL
 The five basic command of SQL CREATE, INSERT, SELECT, UPDATE and DELETE
 
 1. SELECT
@@ -32,6 +33,19 @@ create temporally table:
 /* 
 */ for a section
 ```
+
+### Filter SQL
+
+You often do 
+'''
+SELECT column1_name, column2_name, column3_name
+FROM table_name
+WHERE column1_name =/>/< number/string
+'''
+<img src = images/WHERE.png height = 150>
+<> means do not inlcude
+
+
 ## NoSQL (Not only SQL)
 
 ## Tutorial
