@@ -46,6 +46,10 @@ WHERE column1_name =/>/< number/string
 
 <> means do not inlcude
 
+<img src = images/WHERE2.png height = 150>
+
+You can also use 'between ... and ...' instead of operators
+
 
 ## NoSQL (Not only SQL)
 
