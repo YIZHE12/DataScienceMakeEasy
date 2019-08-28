@@ -102,3 +102,7 @@ However, unlike regression, now we cannot simplily sum up prediction and residua
 [Example](https://www.youtube.com/watch?v=jxuNLH5dXCs)
 
 [Math](https://www.youtube.com/watch?v=StWY5QWMXCw)
+
+
+
+For more on this: https://blog.csdn.net/zwqjoy/article/details/82150528 (in Chinese)
