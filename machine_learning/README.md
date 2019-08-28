@@ -47,6 +47,30 @@ a generative model is a model of the conditional probability of the observable X
 
 a discriminative model is a model of the conditional probability of the target Y, given an observation x, symbolically, P(Y|X = x)
 
+## Part 5: Feature selection
+
+Feature selection approaches try to find a subset of the features. The three strategies are: the filter strategy (e.g. information gain), the wrapper strategy (e.g. search guided by accuracy), and the embedded strategy (selected features add or are removed while building the model based on prediction errors).
+
+In [sklearn](https://scikit-learn.org/stable/modules/feature_selection.html), there are several implementation of feature selection, for examples: 
+
+#### Filter strategy
+
+1. Removing features with low variance 
+
+2. Univariate feature selection based on statistical elements, such as correlation between variables
+
+#### Wrapper strategy
+
+1. Recursive feature elimination is to select features by recursively considering smaller and smaller sets of features.
+
+2. Feature selection using SelectFromModel in sklearn - two common models (L1 and trees), but can use any other models.
+
+#### Embedded strategy
+
+PCA, LDA, GDA, Autoencoder, tSNE etc.
+
+
+
 
 
 ## Further reading
