@@ -39,12 +39,13 @@ Disadvantages:
 No as good in regression than in classification - not continuous output and cannot handle if y is out of range.
 Low interpretability. 
 
-#### [Adaboost](https://www.youtube.com/watch?v=LsK-xG1cLYA)
+#### AdaBoost
+[Video](https://www.youtube.com/watch?v=LsK-xG1cLYA)
 Used stump tree (only has one node and two leaves). 
 Unlike random forest which each tree has equal vote, some Adaboost tree can have more votes than others.
 The trees are related and the order of the trees is important. 
 The vote that a tree can have is related to the error it produced. 
-Note the vote can be negative. 
+Note the vote can be negative. We can also called the vote as the amount of say.
 
 Amount of say = 1/2 log((1- te)/te)
 
@@ -66,6 +67,8 @@ New sample weight = sample wieght x exp(-amount of say)
 
 All the sample weight need to be rescaled to make it sum up to 1 before each iteration.
 
+We can either used a weighted gini index for the next tree or we can resample the data with weights 
+and use the normal gini index formular. 
 
 #### Gradient Boosting Decision Tree (GBDT)
 
