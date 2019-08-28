@@ -14,7 +14,7 @@ The purpose of this github repo is to put some basic topics in data science toge
 
 ## Deep Learning
 
-## System design
+## [System design](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/system_design)
 
 ## [SQL](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/database_SQL)
 
