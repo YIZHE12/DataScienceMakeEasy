@@ -28,9 +28,9 @@ Bias is a learner’s tendency to consistently learn the same wrong thing. Varia
 
 <img src = images/variance.png>
 
-<img src = images/trade-off.png>
+<img src = images/trade-off.png height = 100>
 
-<img src = images/error-eq.png>
+<img src = images/error-eq.png height = 30>
 
 ## Part 3: Data Hanlding
 
