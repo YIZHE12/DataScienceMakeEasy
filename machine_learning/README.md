@@ -75,7 +75,12 @@ PCA, LDA, GDA, Autoencoder, tSNE etc.
 
 ## Further reading
 
-Books: http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf
+Books: 
+http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf
+
+https://web.stanford.edu/~hastie/Papers/ESLII.pdf
+
+http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf
 
 https://developers.google.com/machine-learning/glossary/
 
