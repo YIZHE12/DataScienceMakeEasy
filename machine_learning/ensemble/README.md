@@ -76,5 +76,29 @@ and use the normal gini index formular.
 [Video](https://www.youtube.com/watch?v=LsK-xG1cLYA)
 
 #### Gradient Boosting Decision Tree (GBDT)
-[Video1](https://www.youtube.com/watch?v=3CC4N4z3GJc)
 
+1. Regression:
+
+GBDT starts at making a single leaf, which is the averaged of all output values if they are continuous variables. This leaf represents an initial guess ofr the target values of all the samples. Then gradient boost build a tree, usually has 8 - 32 leaves. GBDT build the next trees based on the error from the previous tree. After the first tree, we calculated the residual of the predictions and built the second tree based on the residual and not the target variables. Note that the number of residual is smaller than the number of leaves, so we will merge some residuals and put them in the same leaves by using the averaged number. Now, comnbined with the previous tree, we have a new value, which is the output of tree1 + learning rate * residual predition of tree2. The learning rate is 0 - 1. Most of time, we take 100 trees.
+
+[Example](https://www.youtube.com/watch?v=3CC4N4z3GJc)
+
+[Math](https://www.youtube.com/watch?v=2xudPOBz-vs)
+
+2. Classification
+
+Odds is the number of positive examples/ number of negative examples. The log(odd) is our initial prediction (leave).
+
+Just as in logistic regression, the easiest way ot use the log(odds) for classification is to convert it to probability and we do that with a logistic function:
+
+Probability = exp(log(odds))/(1+exp(log(odds)) = 1/(1+exp(-log(odds))
+
+So now if this probability is > 0.5 (or other threshold you chose), then the output is 1. 
+
+So now we calculated the pseudo residuals just as in regression (0 or 1 - predictions) and build the next tree to predict the residuals.
+
+However, unlike regression, now we cannot simplily sum up prediction and residuals.
+
+[Example](https://www.youtube.com/watch?v=jxuNLH5dXCs)
+
+[Math](https://www.youtube.com/watch?v=StWY5QWMXCw)
