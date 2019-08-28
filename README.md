@@ -19,11 +19,7 @@ The purpose of this github repo is to put some basic topics in data science toge
 ## [SQL](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/database_SQL)
 
 
-## Case study
-
-Resource:
-
-https://www.analyticsvidhya.com/blog/tag/case-study/
+## [Case study](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/Business_case)
 
 ## Python
 
