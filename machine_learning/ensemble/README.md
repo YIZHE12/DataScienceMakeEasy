@@ -57,6 +57,7 @@ After each iteration, we changed the sample weights:
 For the wrongly classified examples:
 
 New sample weight = sample wieght x exp(amount of say)
+
 <img src = ../images/new-weight.png height = 300>
 
 In this way, if the previous classifier is good, the amount of say is high, 
