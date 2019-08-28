@@ -41,23 +41,8 @@ Bias is a learner’s tendency to consistently learn the same wrong thing. Varia
 [Imbalanced data](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
 ## Part 4: Generative VS Discriminative Models
-In General, A Discriminative model models the decision boundary between the classes. A Generative Model ‌explicitly models the actual distribution of each class. A Generative Model learns the joint probability distribution p(x,y). It predicts the conditional probability with the help of Bayes Theorem. A Discriminative model learns the conditional probability distribution p(y|x).
-~~~
-Examples:
+In General, A Discriminative model models the decision boundary between the classes. A Generative Model ‌explicitly models the actual distribution of each class. A Generative Model learns the joint probability distribution p(x,y). It predicts the conditional probability with the help of Bayes Theorem. A Discriminative model learns the conditional probability distribution p(y|x). For example, Naïve Bayes, Bayesian networks, Markov random fields and Hidden Markov Models (HMM) are generative classifiers, while logistic regression,traditional neural networks, nearest neighbour and conditional Random Fields (CRF)s are discriminative classifiers.
 
-Generative classifiers
-Naïve Bayes
-Bayesian networks
-Markov random fields
-Hidden Markov Models (HMM)
-
-Discriminative Classifiers
-Logistic regression
-Scalar Vector Machine
-Traditional neural networks
-Nearest neighbour
-Conditional Random Fields (CRF)s
-~~~
 
 ## Part 4: Gradient Descent and regression models
 
