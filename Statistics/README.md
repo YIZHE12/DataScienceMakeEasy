@@ -109,9 +109,8 @@ Differnece between Fisher and Chi-square test:
 They are calculating the same thing using different ways. The Fisher's exact test always give the correct p value while the chi-sqaure test on;y gives you an approximate, which doesn't work for small dataset. The Fisher's exact test is more computationally expensive, therefore, often it is only be used for a small data set. However, it is recommended, when it is possible, used Fisher's exact test instead of Chi-sqaure test. 
 
 
-## Type I error
-
-## Type II error
+## Type I error and Type II error
+A type I error is the rejection of a true null hypothesis (also known as a "false positive" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a "false negative" finding or conclusion).
 
 ## p value
 
