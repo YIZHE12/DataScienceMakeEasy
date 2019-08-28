@@ -81,3 +81,4 @@ https://developers.google.com/machine-learning/glossary/
 
 https://developers.google.com/machine-learning/guides/rules-of-ml/
 
+Video: https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF
