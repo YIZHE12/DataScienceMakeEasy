@@ -1,12 +1,10 @@
-Machine learning
-
-# Part 1: What is Machine Learning?
+# What is Machine Learning?
 
 Arthur Samuel: "the field of study that gives computers the ability to learn without being explicitly programmed." What set aside machine learning from other computer sience method is the ability to adapt. 
 
 Tom Mitchell: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
 
-### Supervised and unsupervised learning
+## Part 1: Supervised and unsupervised learning
 
 The major difference between supervised and unsupervised learning is if there is a target variable. Two common tasks in unsupervised learning: clustering and association. 
 
