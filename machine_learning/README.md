@@ -23,13 +23,16 @@ In a scenario where the data set is massive but the labeled sample are few, one 
 
 For example, one would like to predict the label of images, but only 10% of the images are labeled. By applying supervised learning, we train a model with the labeled data, then we apply the model to predict the unlabeled data. It would be hard to convince ourselves that the model would be general enough, after all we learnt from only the minority of data set. A better strategy could be to first cluster the images into groups (unsupervised learning), and then apply the supervised learning algorithm on each of the groups individually. The unsupervised learning in the first stage could help us to narrow down the scope of learning so that the supervised learning in the second stage could obtain better accuracy.
 
-## Bias and variance
+# Part 2: Bias and variance
 Bias is a learner’s tendency to consistently learn the same wrong thing. Variance is the tendency to learn random things unrelated to the real signal
 
 <img src = images/bias.png>
 
 <img src = images/variance.png>
 
+<img src = images/trade-off.png>
+
+<img src = images/error-eq.png>
 
 ## Data Hanlding
 
