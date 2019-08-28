@@ -8,6 +8,16 @@ RDBMS = Relational databse management system.
 Three main building block for a data model: Entity, Attribute and relationship (one to one, one to many or many to many).
 A entity is a table in the database, and attribute is a column. For example, book as an entity, may have attributes as book_id, book_title, etc.
 
+Rules for normalized tables:
+
+1. Every row has the same number of columns.
+
+2. There is a unique key and everything in a row says something about the key.
+
+3. Facts that don't relate to the key belong in different tables.
+
+4. Tables shouldn't imply relationships that don't exist.
+
 ## SQL (Structured Query Language)
 ### Basic SQL
 The five basic command of SQL CREATE, INSERT, SELECT, UPDATE and DELETE
@@ -53,8 +63,19 @@ You can also use 'between ... and ...' instead of operators
 
 ## NoSQL (Not only SQL)
 
-## Tutorial
 
+
+
+## Further reading
+https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-exercise-sql_movie_query_core/
+
+Execise:
+https://www.hackerrank.com/challenges/harry-potter-and-wands/problem
+https://www.techbeamers.com/sql-query-questions-answers-for-practice/
+https://www.w3schools.com/sql/sql_update.asp
+
+Window function:
+https://classroom.udacity.com/courses/ud198/lessons/fec9c33e-daea-4a5d-827e-41a09c6fe371/concepts/4c71795c-8ebf-4a3f-b951-494220b702cc
 SQLite: https://www.tutorialspoint.com/sqlite/index.htm
 
 
