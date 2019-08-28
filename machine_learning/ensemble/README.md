@@ -27,6 +27,7 @@ the mean prediction error on each training sample xᵢ, using only the trees tha
 For boosting, the fine tuning value is often the depth of the trees.
 
 ### Comparing several algorithm
+
 #### Random forest
 
 Advantages:
@@ -40,22 +41,23 @@ No as good in regression than in classification - not continuous output and cann
 Low interpretability. 
 
 #### AdaBoost
-[Video](https://www.youtube.com/watch?v=LsK-xG1cLYA)
 Used stump tree (only has one node and two leaves). 
 Unlike random forest which each tree has equal vote, some Adaboost tree can have more votes than others.
 The trees are related and the order of the trees is important. 
 The vote that a tree can have is related to the error it produced. 
 Note the vote can be negative. We can also called the vote as the amount of say.
 
-Amount of say = 1/2 log((1- te)/te)
+Amount of say = 1/2 log((1- te)/te), where te is the total error
 
-te is the total error
+<img src = ../images/amount-of-say.png height = 100>
+<img src = ../images/amount-of-say2.png height = 300>
 
 After each iteration, we changed the sample weights:
 
 For the wrongly classified examples:
 
 New sample weight = sample wieght x exp(amount of say)
+<img src = ../images/new-weight.png height = 300>
 
 In this way, if the previous classifier is good, the amount of say is high, 
 then the new sample weight will be much larger. However, if the previous classifier is bad,
@@ -70,6 +72,8 @@ All the sample weight need to be rescaled to make it sum up to 1 before each ite
 We can either used a weighted gini index for the next tree or we can resample the data with weights 
 and use the normal gini index formular. 
 
-#### Gradient Boosting Decision Tree (GBDT)
+[Video](https://www.youtube.com/watch?v=LsK-xG1cLYA)
 
+#### Gradient Boosting Decision Tree (GBDT)
+[Video1](https://www.youtube.com/watch?v=3CC4N4z3GJc)
 
