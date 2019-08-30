@@ -16,7 +16,7 @@ Once an item is added, it stays in that position relative to the other elements 
 
 A python list contains more storage space than is needed to store the items currently in the list. This extra space, the size of which can be up to twice the necessary capacity, allows for quick and easy expansion as new items are added to the list.  
 
-<img src = images/python_list.png>
+<img src = images/python_list.png width = 200>
 
 Lists are mutable; strings are immutable.
 
