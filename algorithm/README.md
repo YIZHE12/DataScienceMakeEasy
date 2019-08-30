@@ -78,6 +78,8 @@ You have a bag to pack with weight limit. You want to pack as many items as poss
 
 1. Brute force: O(2^n) - think about each item as either 0 or 1. 0 means packing, 1 means no.
 This is an exponential time, we would prefer a polynomial time algorithm, such as O(n^2) or linear time, such as O(3n).
+
+#### [Examples with codes](https://github.com/YIZHE12/DataScienceMakeEasy/tree/master/algorithm/dynamic_programming)
 ___
 ## Greedy Algorithm: 
 A loose definition Tim Roughgarden: from iteratively make "my opic" decision - decision that seems to be good at the time, and hope everyting workds out at the end. A more formal definition: A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage[1] with the intent of finding a global optimum. 
