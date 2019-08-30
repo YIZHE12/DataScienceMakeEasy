@@ -17,6 +17,8 @@ Once an item is added, it stays in that position relative to the other elements 
 A python list contains more storage space than is needed to store the items currently in the list. This extra space, the size of which can be up to twice the necessary capacity, allows for quick and easy expansion as new items are added to the list.
 
 <img src = images/python_list.png>
+
+<img src = images/python_string.png>
 ## Array
 
 A one-dimensional array is composed of multiple sequential elements stored in contiguous bytes of memory and allows for random access to the individual elements. Compared to list, to use array, you have to know the size of the array beforehand, and cannot change it later.
