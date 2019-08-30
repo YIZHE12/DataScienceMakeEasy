@@ -14,9 +14,11 @@ Once an item is added, it stays in that position relative to the other elements 
 
 ## List
 
-A python list contains more storage space than is needed to store the items currently in the list. This extra space, the size of which can be up to twice the necessary capacity, allows for quick and easy expansion as new items are added to the list.
+A python list contains more storage space than is needed to store the items currently in the list. This extra space, the size of which can be up to twice the necessary capacity, allows for quick and easy expansion as new items are added to the list.  
 
 <img src = images/python_list.png>
+
+Lists are mutable; strings are immutable.
 
 <img src = images/python_string.png>
 ## Array
@@ -27,9 +29,19 @@ A one-dimensional array is composed of multiple sequential elements stored in co
 
 Similar to python dictionary.
 
+<img src = images/python_dict1.png>
+
+<img src = images/python_dict2.png>
+
+
 ## Set
 
 A set is a container that stores a collection of unique values over a given comparable domain in which the stored values have no particular ordering. The key of a map is a set as it is not allow to have repetitions.
+
+<img src = images/python_set1.png>
+
+<img src = images/python_set2.png>
+
 
 ## Link List
 In python, every time when you insert an element to a list, new storage of the entire list will be created and the elemenets need to be shifted to move room. This means it is quite not efficient when the list is large. Therefore, in this situation, we used link list instead, which doesn't recreate the storage neither does it require shifting. However, it does eliminate the constant time direct element access available with the array and Python list. As its name implies, the link strucutre has to been accessed based on the 'link order'. The singly linked list is a linear structure in which traversals start at the front and progress, one element at a time, to the end. Other variations include the circularly linked, the doubly linked, and the circularly doubly linked lists.
