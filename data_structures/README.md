@@ -20,7 +20,7 @@ A python list contains more storage space than is needed to store the items curr
 
 Lists are mutable; strings are immutable.
 
-<img src = images/python_string.png>
+<img src = images/python_string.png width = 600>
 ## Array
 
 A one-dimensional array is composed of multiple sequential elements stored in contiguous bytes of memory and allows for random access to the individual elements. Compared to list, to use array, you have to know the size of the array beforehand, and cannot change it later.
@@ -29,18 +29,18 @@ A one-dimensional array is composed of multiple sequential elements stored in co
 
 Similar to python dictionary.
 
-<img src = images/python_dict1.png>
+<img src = images/python_dict1.png width = 600>
 
-<img src = images/python_dict2.png>
+<img src = images/python_dict2.png width = 600>
 
 
 ## Set
 
 A set is a container that stores a collection of unique values over a given comparable domain in which the stored values have no particular ordering. The key of a map is a set as it is not allow to have repetitions.
 
-<img src = images/python_set1.png>
+<img src = images/python_set1.png width = 600>
 
-<img src = images/python_set2.png>
+<img src = images/python_set2.png width = 600>
 
 
 ## Link List
