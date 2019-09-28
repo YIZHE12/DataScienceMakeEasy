@@ -1,4 +1,10 @@
 # R in statistics
+## Common commands 
+getwd() # get working directory
+
+read.csv('xxx.csv') # read csv file
+
+dir() # show all files in current directory
 
 ## Resources:
 
