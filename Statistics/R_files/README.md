@@ -6,6 +6,8 @@ read.csv('xxx.csv') # read csv file
 
 dir() # show all files in current directory
 
+[seq](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/seq) is a command to create sequences 
+
 ## Resources:
 
 [R very short introduction](https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf)
