@@ -30,6 +30,3 @@ dir() # show all files in current directory
 
 [Advanced R](https://englianhu.files.wordpress.com/2016/05/advanced-r.pdf)
 
-[Applied Predictive Modeling](https://vuquangnguyen2016.files.wordpress.com/2018/03/applied-predictive-modeling-max-kuhn-kjell-johnson_1518.pdf)
-
-[Machine Learning: A Probabilistic Perspective](https://doc.lagout.org/science/Artificial%20Intelligence/Machine%20learning/Machine%20Learning_%20A%20Probabilistic%20Perspective%20%5BMurphy%202012-08-24%5D.pdf)
