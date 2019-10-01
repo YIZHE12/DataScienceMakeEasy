@@ -8,6 +8,16 @@ dir() # show all files in current directory
 
 [seq](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/seq) is a command to create sequences 
 
+## Enviroment variables
+To get the enviroment variables of a function, one can use
+```
+ls(enviroment(function_name))
+```
+To get the value of a variable inside a function, one can use
+```
+get('variable_name', enviroment(function_name))
+```
+
 ## Resources:
 
 [R very short introduction](https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf)
