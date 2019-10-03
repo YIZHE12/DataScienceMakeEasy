@@ -11,11 +11,11 @@ dir() # show all files in current directory
 [rbinom](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/seq) create binomial distribution
 
 ## Enviroment variables
-To get the enviroment variables of a function, one can use
+To get the enviroment variables of a function
 ```
 ls(enviroment(function_name))
 ```
-To get the value of a variable inside a function, one can use
+To get the value of a variable inside a function
 ```
 get('variable_name', enviroment(function_name))
 ```
