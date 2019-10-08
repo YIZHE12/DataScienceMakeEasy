@@ -10,6 +10,10 @@ dir() # show all files in current directory
 
 [rbinom](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/seq) create binomial distribution
 
+[paste and paste0](https://www.r-bloggers.com/difference-between-paste-and-paste0/) to concatenate strings
+
+[rep](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/rep) to repeat strings
+
 ## Enviroment variables
 To get the enviroment variables of a function
 ```
