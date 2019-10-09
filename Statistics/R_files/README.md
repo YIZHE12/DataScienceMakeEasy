@@ -14,6 +14,12 @@ dir() # show all files in current directory
 
 [rep](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/rep) to repeat strings
 
+[cut](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/cut) divide continuous variable into factors
+
+[pretty](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/pretty) create pretty breakpoints to divide a continuous variable
+
+[cat](https://www.math.ucla.edu/~anderson/rw1001/library/base/html/cat.html) concatenates the objects
+
 ## Enviroment variables
 To get the enviroment variables of a function
 ```
