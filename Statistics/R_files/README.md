@@ -26,6 +26,9 @@ na.rm=TRUE # ignore NA values in mean or average oeprations
 
 [stri_enc_toascii](https://www.rdocumentation.org/packages/stringi/versions/1.4.3/topics/stri_enc_toascii) convert string to ASCII
 
+## Common approach
+[mean(..., trim = True)](https://garstats.wordpress.com/2017/11/28/trimmed-means/) calculate the trim mean instead of the standard mean. An extreme example of trim mean is the median. 
+
 ## Enviroment variables
 To get the enviroment variables of a function
 ```
