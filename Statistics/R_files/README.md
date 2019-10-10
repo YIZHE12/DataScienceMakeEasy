@@ -6,6 +6,8 @@ read.csv('xxx.csv') # read csv file
 
 dir() # show all files in current directory
 
+na.rm=TRUE # ignore NA values in mean or average oeprations
+
 [seq](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/seq) is a command to create sequences 
 
 [rbinom](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/seq) create binomial distribution
