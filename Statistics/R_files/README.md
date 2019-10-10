@@ -72,8 +72,10 @@ grep, grepl, regexpr, gregexpr and regexec search for matches to argument patter
 sub and gsub perform replacement of the first and all matches respectively.
 ```
 
-## Shortcut on Mac
-https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts
+## [Shortcut](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
+
+Mac:
+
 ```Command+Shift+C``` comment/uncomment
 
 ```Ctrl+L``` clear console
