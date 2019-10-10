@@ -24,6 +24,8 @@ na.rm=TRUE # ignore NA values in mean or average oeprations
 
 [%in%](http://www.datasciencemadesimple.com/in-operator-in-r/) find if an element belong to a vector
 
+[stri_enc_toascii](https://www.rdocumentation.org/packages/stringi/versions/1.4.3/topics/stri_enc_toascii) convert string to ASCII
+
 ## Enviroment variables
 To get the enviroment variables of a function
 ```
