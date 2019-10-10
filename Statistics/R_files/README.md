@@ -72,6 +72,10 @@ grep, grepl, regexpr, gregexpr and regexec search for matches to argument patter
 sub and gsub perform replacement of the first and all matches respectively.
 ```
 
+## Shortcut on Mac
+
+```Command+Shift+C``` comment/uncomment
+```Ctrl+L``` clear console
 
 ## Common approach
 [mean(..., trim = True)](https://garstats.wordpress.com/2017/11/28/trimmed-means/) calculate the trim mean instead of the standard mean. An extreme example of trim mean is the median. 
