@@ -73,9 +73,11 @@ sub and gsub perform replacement of the first and all matches respectively.
 ```
 
 ## Shortcut on Mac
-
+https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts
 ```Command+Shift+C``` comment/uncomment
+
 ```Ctrl+L``` clear console
+
 
 ## Common approach
 [mean(..., trim = True)](https://garstats.wordpress.com/2017/11/28/trimmed-means/) calculate the trim mean instead of the standard mean. An extreme example of trim mean is the median. 
