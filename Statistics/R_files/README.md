@@ -66,9 +66,11 @@ Note:
 ```
 
 [pattern matching](https://stat.ethz.ch/R-manual/R-devel/library/base/html/grep.html)
+```
 grep, grepl, regexpr, gregexpr and regexec search for matches to argument pattern within each element of a character vector: they differ in the format of and amount of detail in the results.
 
 sub and gsub perform replacement of the first and all matches respectively.
+```
 
 
 ## Common approach
