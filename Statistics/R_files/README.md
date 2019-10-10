@@ -20,6 +20,8 @@ dir() # show all files in current directory
 
 [cat](https://www.math.ucla.edu/~anderson/rw1001/library/base/html/cat.html) concatenates the objects
 
+[%in%](http://www.datasciencemadesimple.com/in-operator-in-r/) find if an element belong to a vector
+
 ## Enviroment variables
 To get the enviroment variables of a function
 ```
