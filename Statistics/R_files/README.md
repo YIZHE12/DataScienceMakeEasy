@@ -1,4 +1,4 @@
-# R in statistics
+# Introduction of R
 ## Common commands 
 getwd() # get working directory
 
@@ -25,6 +25,9 @@ na.rm=TRUE # ignore NA values in mean or average oeprations
 [%in%](http://www.datasciencemadesimple.com/in-operator-in-r/) find if an element belong to a vector
 
 [stri_enc_toascii](https://www.rdocumentation.org/packages/stringi/versions/1.4.3/topics/stri_enc_toascii) convert string to ASCII
+
+## String
+[regular expression](https://rstudio-pubs-static.s3.amazonaws.com/74603_76cd14d5983f47408fdf0b323550b846.html)
 
 ## Common approach
 [mean(..., trim = True)](https://garstats.wordpress.com/2017/11/28/trimmed-means/) calculate the trim mean instead of the standard mean. An extreme example of trim mean is the median. 
