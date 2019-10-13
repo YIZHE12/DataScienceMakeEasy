@@ -59,7 +59,6 @@ na.rm=TRUE # ignore NA values in mean or average oeprations
 [:graph:]: graphical (human readable) characters: equivalent to [[:alnum:][:punct:]].
 [:print:]: printable characters, equivalent to [[:alnum:][:punct:]\\s].
 [:cntrl:]: control characters, like \n or \r, [\x00-\x1F\x7F].
-Note:
 
 [:...:] has to be used inside square brackets, e.g. [[:digit:]].
 \ itself is a special character that needs escape, e.g. \\d. Do not confuse these regular expressions with R escape sequences such as \t.
