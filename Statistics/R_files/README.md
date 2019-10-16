@@ -26,6 +26,16 @@ na.rm=TRUE # ignore NA values in mean or average oeprations
 
 [stri_enc_toascii](https://www.rdocumentation.org/packages/stringi/versions/1.4.3/topics/stri_enc_toascii) convert string to ASCII
 
+## Python and R compare
+Python
+```
+len(A)
+```
+R
+```
+length(A)
+```
+
 ## String
 [regular expression](https://rstudio-pubs-static.s3.amazonaws.com/74603_76cd14d5983f47408fdf0b323550b846.html)
 ```
