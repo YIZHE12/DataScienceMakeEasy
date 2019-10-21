@@ -26,6 +26,15 @@ na.rm=TRUE # ignore NA values in mean or average oeprations
 
 [stri_enc_toascii](https://www.rdocumentation.org/packages/stringi/versions/1.4.3/topics/stri_enc_toascii) convert string to ASCII
 
+[mutate and transmute](https://dplyr.tidyverse.org/reference/mutate.html) mutate() adds new variables and preserves existing ones; transmute() adds new variables and drops existing ones.
+
+## Dataframe function
+[dlply](https://www.rdocumentation.org/packages/plyr/versions/1.8.4/topics/dlply) Split Data Frame, Apply Function, And Return Results In A List.
+
+[ldply](https://www.rdocumentation.org/packages/plyr/versions/1.8.4/topics/ldply) Split List, Apply Function, And Return Results In A Data Frame.
+
+[laply](https://www.rdocumentation.org/packages/plyr/versions/1.8.4/topics/laply) Split List, Apply Function, And Return Results In An Array.
+
 ## Python and R compare
 Python
 ```
