@@ -120,6 +120,18 @@ A type I error is the rejection of a true null hypothesis (also known as a "fals
 
 ## [Designing an Experiment, Power Analysis](http://www.statsoft.com/Textbook/Power-Analysis)
 
+Several important terms:
+
+Sample size is the number of observations in each group of the experimental design
+
+The significant level is the probability of making a type I error (false positive). It is the ability to find an effect that is not there. 
+
+The power is equal to one minus the probability of making a type II error (false negative). It is the ability to find an effect that it is there.
+
+Effec size is the mangnitude of the effect under the alternate or research hypothesis. It depends on the statistical tool you use. 
+
+
+
 ## [Nonparametric statistics](https://en.wikipedia.org/wiki/Nonparametric_statistics)
 
 ## [Comparing two distribution: The Kullback Leibler distance (KL) and Kolmogorov–Smirnov test (KS)](https://stats.stackexchange.com/questions/9311/kullback-leibler-vs-kolmogorov-smirnov-distance)
