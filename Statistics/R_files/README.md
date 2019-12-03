@@ -116,7 +116,10 @@ To get the value of a variable inside a function
 ```
 get('variable_name', enviroment(function_name))
 ```
+## EDA in R
 
+1. Pairplots
+http://www.win-vector.com/blog/2018/10/scatterplot-matrices-pair-plots-with-cdata-and-ggplot2/
 ## Resources:
 
 [R very short introduction](https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf)
