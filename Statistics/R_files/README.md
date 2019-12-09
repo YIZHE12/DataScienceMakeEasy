@@ -138,6 +138,8 @@ http://www.win-vector.com/blog/2018/10/scatterplot-matrices-pair-plots-with-cdat
 
 [Beautiful R report](http://swcarpentry.github.io/r-novice-gapminder/)
 
+[R color cheat sheet](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf)
+
 
 ## Book
 [The art of R programming](http://diytranscriptomics.com/Reading/files/The%20Art%20of%20R%20Programming.pdf)
