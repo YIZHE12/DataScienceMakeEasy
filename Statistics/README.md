@@ -117,6 +117,7 @@ A type I error is the rejection of a true null hypothesis (also known as a "fals
 ## Recall, Percision, F1 score
 
 ## [A/B testing](https://conversionxl.com/blog/testing-statistics-mistakes/)
+Something related is the [Multi-Armed Bandit](https://lilianweng.github.io/lil-log/2018/01/23/the-multi-armed-bandit-problem-and-its-solutions.html), when you want to run experiments on different factors while maintaining the maximum profit 
 
 ## [Designing an Experiment, Power Analysis](http://www.statsoft.com/Textbook/Power-Analysis)
 
