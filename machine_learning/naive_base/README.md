@@ -1,2 +1,2 @@
 
-<img src = images/naive_base.png height = 300>
+<img src = ../images/naive_base.png height = 300>
