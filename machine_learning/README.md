@@ -67,7 +67,12 @@ In [sklearn](https://scikit-learn.org/stable/modules/feature_selection.html), th
 
 #### Embedded strategy
 
-PCA, LDA, GDA, Autoencoder, tSNE etc.
+UMAP, PCA, LDA, GDA, Autoencoder, tSNE etc.
+
+## Part 6: Metric Learning
+[Distance metric learning](http://contrib.scikit-learn.org/metric-learn/introduction.html) (or simply, metric learning) aims at automatically constructing task-specific distance metrics from (weakly) supervised data, in a machine learning manner. The learned distance metric can then be used to perform various tasks (e.g., k-NN classification, clustering, information retrieval).
+
+It can be supervised learning (learn a distance metric that puts points with the same label close together while pushing away points with different labels, such as LDA) and weakly supervised learning (typically for pairs, triplets, or quadruplets of data points, such as one shot learning for face reconginition).
 
 
 
