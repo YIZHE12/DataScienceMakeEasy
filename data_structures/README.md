@@ -16,6 +16,8 @@ Once an item is added, it stays in that position relative to the other elements 
 
 A python list contains more storage space than is needed to store the items currently in the list. This extra space, the size of which can be up to twice the necessary capacity, allows for quick and easy expansion as new items are added to the list.  
 
+Note that slicing in list will create a new list, which is a subset of the original list. If you are asked to do in place edition of a list, slicing will not work since it will create a new list.  
+
 <img src = images/python_list.png width = 600>
 
 Lists are mutable; strings are immutable.
